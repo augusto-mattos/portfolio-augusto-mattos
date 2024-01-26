@@ -1,0 +1,26 @@
+@use "../variables";
+
+.error-container {
+  background-color: variables.$black;
+  color: variables.$gray;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 78px;
+  padding: 0 100px;
+  p {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    span {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+  iframe {
+    border-radius: 12px;
+    max-width: 615px;
+  }
+}

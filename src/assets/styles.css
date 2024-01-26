@@ -1,0 +1,39 @@
+.error-container {
+  background-color: #0C0C0C;
+  color: #F1F1F1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 78px;
+  padding: 0 100px;
+}
+.error-container p {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.error-container p span {
+  font-size: 20px;
+  font-weight: 400;
+}
+.error-container iframe {
+  border-radius: 12px;
+  max-width: 615px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  margin: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */
