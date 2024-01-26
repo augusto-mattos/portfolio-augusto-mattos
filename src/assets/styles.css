@@ -14,9 +14,10 @@
   font-weight: 600;
   line-height: normal;
 }
-.error-container p span {
+.error-container span {
   font-size: 20px;
   font-weight: 400;
+  line-height: 30px;
 }
 .error-container iframe {
   border-radius: 12px;
