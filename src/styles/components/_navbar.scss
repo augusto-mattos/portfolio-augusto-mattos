@@ -1,0 +1,29 @@
+@use "../variables";
+@use "../mixins";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 36px 0;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  .mail-navbar {
+    @include mixins.desktop-flex-aligned-center();
+    gap: 17px;
+    .email-icon {
+      height: 30px;
+    }
+  }
+  .navbar-links {
+    @include mixins.desktop-flex-aligned-center();
+    gap: 30px;
+    .translation-icon {
+      height: 30px;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: variables.$black;
+  }
+}
