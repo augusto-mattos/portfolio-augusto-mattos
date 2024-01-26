@@ -1,0 +1,37 @@
+import { NavLink } from "react-router-dom";
+import translationIcon from "../assets/logos/translation.png";
+import emailIcon from "../assets/logos/email.png";
+
+function Navbar() {
+  const email = "mattos.aug@gmail.com";
+
+  return (
+    <>
+      <div className="navbar">
+        <div className="mail-navbar">
+          <img
+            src={emailIcon}
+            className="email-icon"
+            alt="email icon"
+          />
+          <NavLink to={`mailto:${email}`}>mattos.aug@gmail.com</NavLink>
+        </div>
+        <div className="navbar-links">
+          <NavLink to="#">About me</NavLink>
+          <NavLink to="#">Portfolio</NavLink>
+          <NavLink to="#">Compétences techniques</NavLink>
+          <NavLink to="#">Contact</NavLink>
+          <NavLink to="#">
+            <img
+              src={translationIcon}
+              className="translation-icon"
+              alt="Translation Icon"
+            />
+          </NavLink>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Navbar;
