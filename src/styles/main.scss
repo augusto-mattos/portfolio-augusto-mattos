@@ -6,6 +6,7 @@
 @use "./components/navbar";
 @use "./components/header";
 @use "./components/buttons";
+@use "./components/about";
 
 body {
   @include mixins.desktop-flex-column-aligned-center();
@@ -26,6 +27,8 @@ body {
 }
 
 main {
-  @include mixins.desktop-max-width();
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
   width: 100%;
 }

@@ -1,26 +1,28 @@
 @use "../variables";
+@use "../mixins";
 
 .header {
+  @include mixins.desktop-max-width();
+  display: flex;
+  flex-direction: column;
+  .header-title {
     display: flex;
     flex-direction: column;
-    .header-title {
-      display: flex;
-      flex-direction: column;
-      margin-top: 100px;
-      gap: 6px;
+    margin-top: 80px;
+    gap: 6px;
+  }
+  .header-copy {
+    color: variables.$gray;
+    display: flex;
+    justify-content: end;
+    p {
+      width: 416px;
     }
-    .header-copy {
-      color: variables.$gray;
-      display: flex;
-      justify-content: end;
-      p {
-        width: 416px;
-      }
-    }
-    .button-header {
-      display: flex;
-      justify-content: center;
-      margin: 68px 0;
-      gap: 52px;
-    }
+  }
+  .button-header {
+    display: flex;
+    justify-content: center;
+    margin: 68px 0;
+    gap: 52px;
+  }
 }
