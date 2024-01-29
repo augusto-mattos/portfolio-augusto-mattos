@@ -1,10 +1,30 @@
 @mixin desktop-flex-aligned-center {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 @mixin desktop-flex-column-aligned-center {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin desktop-max-width {
+  max-width: 1140px;
+  padding: 0 30px;
+}
+
+@mixin desktop-btn-default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding: 15px 16px;
+  border: 0;
+  cursor: pointer;
 }

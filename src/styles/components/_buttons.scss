@@ -1,0 +1,20 @@
+@use "../variables";
+@use "../mixins";
+
+.btn-primary {
+  color: variables.$light;  
+  background: variables.$black;
+  @include mixins.desktop-btn-default();
+  border-radius: 30px;
+}
+
+.btn-secondary {
+    color: variables.$black;  
+    background: variables.$light;
+    @include mixins.desktop-btn-default();
+}
+
+.download-btn {
+    width: 24px;
+    height: 24px;
+}

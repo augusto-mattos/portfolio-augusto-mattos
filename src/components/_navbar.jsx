@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import translationIcon from "../assets/logos/translation.png";
-import emailIcon from "../assets/logos/email.png";
+import translationIcon from "../assets/icons/translation.png";
+import emailIcon from "../assets/icons/email.png";
 
 function Navbar() {
   const email = "mattos.aug@gmail.com";
