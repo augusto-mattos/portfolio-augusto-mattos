@@ -12,6 +12,8 @@
 @mixin desktop-max-width {
   max-width: 1140px;
   padding: 0 30px;
+  align-self: center;
+  width: 100%;
 }
 
 @mixin desktop-btn-default {
@@ -20,7 +22,7 @@
   align-items: center;
   gap: 6px;
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: normal;
   text-align: center;
