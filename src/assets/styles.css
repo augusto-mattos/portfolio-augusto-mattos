@@ -201,6 +201,26 @@ h5 {
   width: 100%;
 }
 
+.competences-container {
+  background-color: #f1f1f1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.competences-container .competences {
+  max-width: 1140px;
+  padding: 0 30px;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  padding: 50px 0;
+}
+.competences-container .competences img {
+  height: 50px;
+}
+
 body {
   display: flex;
   align-items: center;

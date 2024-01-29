@@ -1,0 +1,19 @@
+@use "../variables";
+@use "../mixins";
+
+.competences-container {
+    background-color: variables.$white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .competences {
+        @include mixins.desktop-max-width();
+        display: flex;
+        gap: 60px;
+        justify-content: center;
+        padding: 50px 0;
+        img {
+            height: 50px;
+        }
+    }
+}
