@@ -8,6 +8,7 @@
   width: 100%;
   font-size: 18px;
   font-weight: 400;
+  @include mixins.desktop-max-width();
   .mail-navbar {
     @include mixins.desktop-flex-aligned-center();
     gap: 17px;

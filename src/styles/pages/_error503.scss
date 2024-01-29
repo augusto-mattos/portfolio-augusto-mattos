@@ -1,12 +1,13 @@
 @use "../variables";
+@use "../mixins";
 
 .error-container {
+  @include mixins.desktop-flex-aligned-center();
   background-color: variables.$black;
-  color: variables.$gray;
+  color: variables.$white;
   height: 100vh;
-  display: flex;
+  width: 100%;
   justify-content: center;
-  align-items: center;
   gap: 78px;
   padding: 0 100px;
   p {

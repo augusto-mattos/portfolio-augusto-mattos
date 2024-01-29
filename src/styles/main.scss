@@ -2,7 +2,10 @@
 @use "./mixins";
 
 @use "./pages/error503";
+
 @use "./components/navbar";
+@use "./components/header";
+@use "./components/buttons";
 
 body {
   @include mixins.desktop-flex-column-aligned-center();
@@ -16,8 +19,13 @@ body {
   @include mixins.desktop-flex-column-aligned-center();
   flex-direction: column;
   height: 100vh;
-  max-width: 1140px;
-  padding: 0 30px;
+  //max-width: 1140px;
+  //padding: 0 30px;
   width: 100%;
   overflow-x: hidden;
+}
+
+main {
+  @include mixins.desktop-max-width();
+  width: 100%;
 }

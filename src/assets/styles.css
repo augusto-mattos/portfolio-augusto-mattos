@@ -1,10 +1,55 @@
+h1 {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+h3 {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+h4 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h5 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .error-container {
-  background-color: #0C0C0C;
-  color: #F1F1F1;
-  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: #0c0c0c;
+  color: #f1f1f1;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
   gap: 78px;
   padding: 0 100px;
 }
@@ -31,6 +76,8 @@
   width: 100%;
   font-size: 18px;
   font-weight: 400;
+  max-width: 1140px;
+  padding: 0 30px;
 }
 .navbar .mail-navbar {
   display: flex;
@@ -50,7 +97,72 @@
 }
 .navbar a {
   text-decoration: none;
-  color: #0C0C0C;
+  color: #0c0c0c;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header .header-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  gap: 6px;
+}
+.header .header-copy {
+  color: #5f5f5f;
+  display: flex;
+  justify-content: end;
+}
+.header .header-copy p {
+  width: 416px;
+}
+.header .button-header {
+  display: flex;
+  justify-content: center;
+  margin: 68px 0;
+  gap: 52px;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding: 15px 16px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.btn-secondary {
+  color: #0c0c0c;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding: 15px 16px;
+  border: 0;
+  cursor: pointer;
+}
+
+.download-btn {
+  width: 24px;
+  height: 24px;
 }
 
 body {
@@ -60,7 +172,7 @@ body {
   flex-direction: column;
   font-family: "Montserrat";
   margin: 0;
-  color: #0C0C0C;
+  color: #0c0c0c;
 }
 
 #root {
@@ -69,10 +181,14 @@ body {
   flex-direction: column;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main {
   max-width: 1140px;
   padding: 0 30px;
   width: 100%;
-  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */
