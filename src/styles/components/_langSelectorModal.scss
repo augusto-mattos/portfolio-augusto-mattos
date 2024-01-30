@@ -1,0 +1,52 @@
+@use "../variables";
+@use "../mixins";
+
+#lang-modal {
+  background-color: variables.$black;
+  @include mixins.desktop-flex-column-aligned-center();
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  .modal-content {
+    @include mixins.desktop-max-width();
+    display: flex;
+    flex-direction: column;
+    padding-top: 104px;
+    gap: 54px;
+    h2 {
+      color: variables.$white;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 31px;
+      button {
+        color: variables.$white;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        background-color: unset;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        &.selected {
+          color: variables.$gray;
+          cursor: unset;
+        }
+      }
+    }
+  }
+  .close-btn {
+    background-color: unset;
+    border: none;
+    position: relative;
+    top: -30%;
+    left: 30%;
+    width: 40px;
+    cursor: pointer;
+  }
+}
