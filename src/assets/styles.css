@@ -78,7 +78,6 @@ h5 {
   justify-content: space-between;
   margin: 36px 0;
   width: 100%;
-  font-size: 16px;
   font-weight: 400;
   max-width: 1140px;
   padding: 0 30px;
@@ -98,12 +97,22 @@ h5 {
   align-items: center;
   gap: 30px;
 }
+.navbar .navbar-links button {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+}
 .navbar .navbar-links .translation-icon {
   height: 30px;
 }
 .navbar a {
   text-decoration: none;
   color: #0c0c0c;
+}
+.navbar button {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
 }
 
 .header {
@@ -177,7 +186,7 @@ h5 {
 
 .about-me {
   background-color: #f1f1f1;
-  padding: 69px 0;
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -215,7 +224,7 @@ h5 {
   display: flex;
   gap: 60px;
   justify-content: center;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 .competences-container .competences img {
   height: 50px;
@@ -228,7 +237,7 @@ h5 {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 29px 0;
+  padding: 40px 0;
 }
 .footer .contact-footer {
   max-width: 1140px;
