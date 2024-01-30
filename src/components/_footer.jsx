@@ -21,7 +21,6 @@ function Footer() {
         <div className="email-footer">
           <img
             src={emailIcon}
-            className="email-icon"
             alt="email icon"
           />
           <NavLink to={`mailto:${email}`}>{email}</NavLink>
@@ -29,7 +28,6 @@ function Footer() {
         <div className="phone-footer">
           <img
             src={phoneIcon}
-            className="phone-icon"
             alt="phone icon"
           />
           <NavLink to={`tel:${numeroDeTelefone}`}>{numeroDeTelefone}</NavLink>
@@ -37,7 +35,6 @@ function Footer() {
         <div className="linkedin-footer">
           <img
             src={linkedinLogo}
-            className="likedin-logo"
             alt="likedin logo"
           />
           <NavLink
@@ -55,7 +52,6 @@ function Footer() {
         <div className="github-footer">
         <img
           src={githubLogo}
-          className="github-logo"
           alt="github logo"
         />
         <NavLink

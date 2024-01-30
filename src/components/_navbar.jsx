@@ -1,9 +1,20 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import translationIcon from "../assets/icons/translation.png";
 import emailIcon from "../assets/icons/fi-rr-envelope-black.png";
+import LanguageModal from "../components/_langSelectorModal";
 
 function Navbar() {
   
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
   const createScrollToSection = (ref) => (section) => {
     const sectionRef = document.getElementById(section);
 
@@ -41,7 +52,7 @@ function Navbar() {
           <button onClick={() => scrollToPortfolio("portfolio")}>Portfolio</button>
           <button onClick={() => scrollToCompetences("stack")}>Compétences techniques</button>
           <button onClick={() => scrollToContact("contact")}>Contact</button>
-          <button>
+          <button onClick={openModal}>
             <img
               src={translationIcon}
               className="translation-icon"
@@ -50,6 +61,10 @@ function Navbar() {
           </button>
         </div>
       </div>
+      <LanguageModal
+        isOpen={modalIsOpen}
+        closeModal={closeModal}
+      />
     </>
   );
 }
