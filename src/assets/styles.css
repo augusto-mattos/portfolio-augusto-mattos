@@ -91,7 +91,7 @@ h5 {
   gap: 17px;
 }
 .navbar .mail-navbar .email-icon {
-  height: 30px;
+  height: 20px;
 }
 .navbar .navbar-links {
   display: flex;
@@ -219,6 +219,78 @@ h5 {
 }
 .competences-container .competences img {
   height: 50px;
+}
+
+.footer {
+  background-color: #0c0c0c;
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 29px 0;
+}
+.footer .contact-footer {
+  max-width: 1140px;
+  padding: 0 30px;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer .contact-footer .email-footer,
+.footer .contact-footer .phone-footer,
+.footer .contact-footer .linkedin-footer {
+  display: flex;
+  gap: 18px;
+}
+.footer .contact-footer .linkedin-footer {
+  text-decoration-line: underline;
+}
+.footer .contact-footer img {
+  height: 20px;
+}
+.footer .contact-footer a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer hr {
+  max-width: 1140px;
+  width: 100%;
+  margin: 18px 0;
+}
+.footer .info-footer {
+  max-width: 1140px;
+  padding: 0 30px;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+}
+.footer .info-footer .github-footer {
+  display: flex;
+  gap: 18px;
+}
+.footer .info-footer img {
+  height: 20px;
+}
+.footer .info-footer a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration-line: underline;
 }
 
 body {

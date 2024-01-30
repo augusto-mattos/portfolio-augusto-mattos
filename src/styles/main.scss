@@ -8,6 +8,7 @@
 @use "./components/buttons";
 @use "./components/about";
 @use "./components/competences";
+@use "./components/footer";
 
 body {
   @include mixins.desktop-flex-column-aligned-center();
