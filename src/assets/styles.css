@@ -78,7 +78,6 @@ h5 {
   justify-content: space-between;
   margin: 36px 0;
   width: 100%;
-  font-size: 16px;
   font-weight: 400;
   max-width: 1140px;
   padding: 0 30px;
@@ -98,12 +97,22 @@ h5 {
   align-items: center;
   gap: 30px;
 }
+.navbar .navbar-links button {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+}
 .navbar .navbar-links .translation-icon {
   height: 30px;
 }
 .navbar a {
   text-decoration: none;
   color: #0c0c0c;
+}
+.navbar button {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
 }
 
 .header {

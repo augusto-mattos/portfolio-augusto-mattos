@@ -1,6 +1,16 @@
+import React from 'react';
 import downloadBtn from "../assets/icons/download.png";
 
 function Header() {
+
+  const scrollToContact = () => {    
+    const contactSection = document.getElementById("contact");
+
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="header">
       <div className="header-title">
@@ -13,7 +23,7 @@ function Header() {
         </p>
       </div>
       <div className="button-header">
-        <button className="btn-primary">Contactez-moi !</button>
+        <button className="btn-primary" onClick={scrollToContact}>Contactez-moi !</button>
         <button className="btn-secondary">Download CV <img src={downloadBtn} alt="download cv" className="download-btn"/> </button>
       </div>
     </div>

@@ -10,46 +10,45 @@ import githubLogo from "../assets/logos/github-mark.png";
 
 function Competences() {
   return (
-    <div className="competences-container">
-
-    <div className="competences">
-      <img
-        src={htmlLogo}
-        alt="HTML"
-      />
-      <img
-        src={cssLogo}
-        alt="CSS"
-      />
-      <img
-        src={jsLogo}
-        alt="JavaScript"
-      />
-      <img
-        src={sassLogo}
-        alt="Sass"
-      />
-      <img
-        src={reactLogo}
-        alt="React"
-      />
-      <img
-        src={reduxLogo}
-        alt="Redux"
-      />
-      <img
-        src={figmaLogo}
-        alt="Figma"
-      />
-      <img
-        src={psLogo}
-        alt="Photoshop"
-      />
-      <img
-        src={githubLogo}
-        alt="GitHub"
-      />
-    </div>
+    <div id="stack" className="competences-container">
+      <div className="competences">
+        <img
+          src={htmlLogo}
+          alt="HTML"
+        />
+        <img
+          src={cssLogo}
+          alt="CSS"
+        />
+        <img
+          src={jsLogo}
+          alt="JavaScript"
+        />
+        <img
+          src={sassLogo}
+          alt="Sass"
+        />
+        <img
+          src={reactLogo}
+          alt="React"
+        />
+        <img
+          src={reduxLogo}
+          alt="Redux"
+        />
+        <img
+          src={figmaLogo}
+          alt="Figma"
+        />
+        <img
+          src={psLogo}
+          alt="Photoshop"
+        />
+        <img
+          src={githubLogo}
+          alt="GitHub"
+        />
+      </div>
     </div>
   );
 }

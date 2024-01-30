@@ -6,7 +6,6 @@
   justify-content: space-between;
   margin: 36px 0;
   width: 100%;
-  font-size: 16px;
   font-weight: 400;
   @include mixins.desktop-max-width();
   .mail-navbar {
@@ -19,6 +18,11 @@
   .navbar-links {
     @include mixins.desktop-flex-aligned-center();
     gap: 30px;
+    button {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+    }
     .translation-icon {
       height: 30px;
     }
@@ -26,5 +30,10 @@
   a {
     text-decoration: none;
     color: variables.$black;
+  }
+  button {
+    border: none;
+    background-color: unset;
+    cursor: pointer;
   }
 }

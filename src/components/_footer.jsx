@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import { NavLink } from "react-router-dom";
 import emailIcon from "../assets/icons/fi-rr-envelope.png";
 import phoneIcon from "../assets/icons/fi-rr-phone-call.png";
@@ -10,9 +11,11 @@ function Footer() {
   const linkedInProfile = "https://www.linkedin.com/in/augusto-mattos/";
   const githubProfile = "https://github.com/augusto-mattos";
 
+  const contactRef = useRef(null);
+
   return (
     <div className="footer">
-      <div className="contact-footer">
+      <div id="contact" ref={contactRef} className="contact-footer">
         <h3>Contact</h3>
         <h4>Travaillons ensemble !</h4>
         <div className="email-footer">

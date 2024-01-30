@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="about-me">
+    <div id="about-me" className="about-me">
       <h3>About me</h3>
       <p>
         Avec 13 ans d'expérience dans le monde de l'éducation, j'ai tracé mon
