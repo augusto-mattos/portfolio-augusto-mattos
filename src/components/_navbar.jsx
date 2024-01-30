@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import translationIcon from "../assets/icons/translation.png";
-import emailIcon from "../assets/icons/email.png";
+import emailIcon from "../assets/icons/fi-rr-envelope-black.png";
 
 function Navbar() {
   const email = "mattos.aug@gmail.com";
@@ -14,7 +14,7 @@ function Navbar() {
             className="email-icon"
             alt="email icon"
           />
-          <NavLink to={`mailto:${email}`}>mattos.aug@gmail.com</NavLink>
+          <NavLink to={`mailto:${email}`}>{email}</NavLink>
         </div>
         <div className="navbar-links">
           <NavLink to="#">About me</NavLink>
