@@ -10,9 +10,6 @@
   @include mixins.desktop-max-width();
   .mail-navbar {
     @include mixins.desktop-flex-aligned-center();
-      &:hover {
-      text-decoration: underline;
-    }
     gap: 17px;
     .email-icon {
       height: 20px;
@@ -25,9 +22,6 @@
       font-family: Montserrat;
       font-size: 16px;
       font-style: normal;
-      &:hover {
-        text-decoration: underline;
-      }
     }
     .translation-icon {
       height: 30px;

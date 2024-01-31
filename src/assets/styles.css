@@ -94,9 +94,6 @@ h5 {
   align-items: center;
   gap: 17px;
 }
-.navbar .mail-navbar:hover {
-  text-decoration: underline;
-}
 .navbar .mail-navbar .email-icon {
   height: 20px;
 }
@@ -109,9 +106,6 @@ h5 {
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
-}
-.navbar .navbar-links button:hover {
-  text-decoration: underline;
 }
 .navbar .navbar-links .translation-icon {
   height: 30px;
@@ -362,8 +356,8 @@ h5 {
   align-items: center;
   flex-direction: column;
   position: absolute;
-  top: 0;
-  height: 100vh;
+  top: 10%;
+  height: 90vh;
   width: 100%;
 }
 #lang-modal .modal-content {
