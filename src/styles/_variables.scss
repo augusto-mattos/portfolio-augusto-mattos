@@ -9,6 +9,9 @@ h1 {
   font-weight: 600;
   line-height: normal;
   margin: 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+  }
 }
 
 h2 {
@@ -17,6 +20,9 @@ h2 {
   font-weight: 400;
   line-height: normal;
   margin: 0;
+  @media (max-width: 1024px) {
+    font-size: 30px;
+  }
 }
 
 p {
@@ -41,6 +47,9 @@ h4 {
   font-weight: 400;
   line-height: normal;
   margin: 0;
+  @media (max-width: 1024px) {
+    font-size: 28px;
+  }
 }
 
 h5 {
@@ -49,4 +58,7 @@ h5 {
   font-weight: 500;
   line-height: normal;
   margin: 0;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
 }

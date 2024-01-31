@@ -2,18 +2,37 @@
 @use "../mixins";
 
 .competences-container {
-    background-color: variables.$white;
-    width: 100%;
+  background-color: variables.$white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .competences {
+    @include mixins.desktop-max-width();
     display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
     justify-content: center;
-    .competences {
-        @include mixins.desktop-max-width();
-        display: flex;
-        gap: 60px;
-        justify-content: center;
-        padding: 40px 0;
-        img {
-            height: 50px;
-        }
+    padding: 40px 0;
+    @media (max-width: 1224px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0 42px;
+      gap: 25px;
     }
+    .stack-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      p {
+        font-size: 14px;
+      }
+      img {
+        height: 60px;
+        @media (max-width: 1224px) {
+            height: 50px;
+          }
+      }
+    }
+  }
 }

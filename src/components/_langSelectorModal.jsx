@@ -13,6 +13,7 @@ const LanguageModal = ({ isOpen, closeModal }) => {
     <>
     {isOpen  && (
     <div id="lang-modal">
+        <button onClick={closeModal} className="close-btn"><img src={closeBtn} alt="Close modal" /></button>
         <div className="modal-content">
             <h2>Modifier la langue</h2>
             <div className="options">
@@ -21,7 +22,6 @@ const LanguageModal = ({ isOpen, closeModal }) => {
                 <button onClick={() => handleSelect("en")} className={selectedLanguage === 'en' ? 'selected' : ''} disabled>English - coming soon!</button>
             </div>
         </div>
-        <button onClick={closeModal} className="close-btn"><img src={closeBtn} alt="Close modal" /></button>
     </div>
     )}
     </>

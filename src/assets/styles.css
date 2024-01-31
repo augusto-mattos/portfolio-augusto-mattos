@@ -5,6 +5,11 @@ h1 {
   line-height: normal;
   margin: 0;
 }
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 
 h2 {
   font-size: 36px;
@@ -12,6 +17,11 @@ h2 {
   font-weight: 400;
   line-height: normal;
   margin: 0;
+}
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 30px;
+  }
 }
 
 p {
@@ -37,6 +47,11 @@ h4 {
   line-height: normal;
   margin: 0;
 }
+@media (max-width: 1024px) {
+  h4 {
+    font-size: 28px;
+  }
+}
 
 h5 {
   font-size: 18px;
@@ -44,6 +59,11 @@ h5 {
   font-weight: 500;
   line-height: normal;
   margin: 0;
+}
+@media (max-width: 1024px) {
+  h5 {
+    font-size: 20px;
+  }
 }
 
 .error-container {
@@ -221,6 +241,12 @@ h5 {
     max-width: 900px;
   }
 }
+@media (max-width: 1024px) {
+  .header {
+    align-self: flex-start;
+    gap: 18px;
+  }
+}
 .header .header-title {
   display: flex;
   flex-direction: column;
@@ -232,14 +258,34 @@ h5 {
   display: flex;
   justify-content: end;
 }
+@media (max-width: 1024px) {
+  .header .header-copy {
+    justify-content: start;
+    align-self: flex-start;
+  }
+}
 .header .header-copy p {
   width: 416px;
+}
+@media (max-width: 1024px) {
+  .header .header-copy p {
+    width: 80%;
+  }
 }
 .header .button-header {
   display: flex;
   justify-content: center;
   margin: 68px 0;
   gap: 52px;
+}
+@media (max-width: 1024px) {
+  .header .button-header {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 10px;
+    margin: 18px 0;
+    align-self: center;
+  }
 }
 
 .btn-primary {
@@ -266,6 +312,11 @@ h5 {
   color: #0c0c0c;
   border: 1px solid #0c0c0c;
 }
+@media (max-width: 1024px) {
+  .btn-primary {
+    font-size: 14px;
+  }
+}
 
 .btn-secondary {
   color: #0c0c0c;
@@ -289,6 +340,11 @@ h5 {
 .btn-secondary:hover {
   border-color: #0c0c0c;
 }
+@media (max-width: 1024px) {
+  .btn-secondary {
+    font-size: 14px;
+  }
+}
 
 .download-btn {
   width: 24px;
@@ -297,11 +353,17 @@ h5 {
 
 .about-me {
   background-color: #f1f1f1;
-  padding: 40px 0;
+  padding: 40px 30px;
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 15px;
+}
+@media (max-width: 1024px) {
+  .about-me {
+    align-self: flex-start;
+    width: auto;
+  }
 }
 .about-me h3 {
   max-width: 1140px;
@@ -314,6 +376,11 @@ h5 {
 @media (max-width: 1224px) {
   .about-me h3 {
     max-width: 900px;
+  }
+}
+@media (max-width: 1024px) {
+  .about-me h3 {
+    margin: 0 42px;
   }
 }
 .about-me p {
@@ -330,6 +397,11 @@ h5 {
     max-width: 900px;
   }
 }
+@media (max-width: 1024px) {
+  .about-me p {
+    margin: 0 42px;
+  }
+}
 
 .competences-container {
   background-color: #f1f1f1;
@@ -343,6 +415,7 @@ h5 {
   align-self: center;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 60px;
   justify-content: center;
   padding: 40px 0;
@@ -352,8 +425,30 @@ h5 {
     max-width: 900px;
   }
 }
-.competences-container .competences img {
-  height: 50px;
+@media (max-width: 1224px) {
+  .competences-container .competences {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 42px;
+    gap: 25px;
+  }
+}
+.competences-container .competences .stack-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.competences-container .competences .stack-logo p {
+  font-size: 14px;
+}
+.competences-container .competences .stack-logo img {
+  height: 60px;
+}
+@media (max-width: 1224px) {
+  .competences-container .competences .stack-logo img {
+    height: 50px;
+  }
 }
 
 .footer {
@@ -377,6 +472,11 @@ h5 {
 @media (max-width: 1224px) {
   .footer .contact-footer {
     max-width: 900px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer .contact-footer {
+    align-items: center;
   }
 }
 .footer .contact-footer .email-footer,
@@ -420,6 +520,12 @@ h5 {
     max-width: 900px;
   }
 }
+@media (max-width: 1024px) {
+  .footer .info-footer p,
+  .footer .info-footer a {
+    font-size: 12px;
+  }
+}
 .footer .info-footer .github-footer {
   display: flex;
   gap: 18px;
@@ -444,9 +550,14 @@ h5 {
   align-items: center;
   flex-direction: column;
   position: absolute;
-  top: 10%;
-  height: 90vh;
+  bottom: 0;
+  height: 85vh;
   width: 100%;
+}
+@media (max-width: 1024px) {
+  #lang-modal {
+    height: 100vh;
+  }
 }
 #lang-modal .modal-content {
   max-width: 1140px;
@@ -466,11 +577,21 @@ h5 {
 #lang-modal .modal-content h2 {
   color: #f1f1f1;
 }
+@media (max-width: 1024px) {
+  #lang-modal .modal-content h2 {
+    padding-left: 42px;
+  }
+}
 #lang-modal .modal-content .options {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 31px;
+}
+@media (max-width: 1024px) {
+  #lang-modal .modal-content .options {
+    padding-left: 42px;
+  }
 }
 #lang-modal .modal-content .options button {
   color: #f1f1f1;
@@ -492,8 +613,8 @@ h5 {
   background-color: unset;
   border: none;
   position: relative;
-  top: -30%;
-  left: 30%;
+  top: 5%;
+  left: 35%;
   width: 40px;
   cursor: pointer;
 }

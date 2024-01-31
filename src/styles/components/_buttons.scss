@@ -12,6 +12,9 @@
     color: variables.$black;
     border: 1px solid variables.$black;
   }
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
 }
 
 .btn-secondary {
@@ -22,6 +25,9 @@
   transition: all .3s ease-in-out;
   &:hover {
     border-color: variables.$black;
+  }
+  @media (max-width: 1024px) {
+    font-size: 14px;
   }
 }
 

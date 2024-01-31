@@ -3,20 +3,30 @@
 
 .about-me {
   background-color: variables.$white;
-  padding: 40px 0;
+  padding: 40px 30px;
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 15px;
+  @media (max-width: 1024px) {
+    align-self: flex-start;
+    width: auto;
+  }
   h3 {
     @include mixins.desktop-max-width();
     align-self: center;
     width: 100%;
+    @media (max-width: 1024px) {
+      margin: 0 42px;
+    }
   }
   p {
     @include mixins.desktop-max-width();
     color: variables.$black;
     align-self: center;
     width: 100%;
+    @media (max-width: 1024px) {
+      margin: 0 42px;
+    }
   }
 }
