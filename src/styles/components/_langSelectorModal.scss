@@ -5,8 +5,8 @@
   background-color: variables.$black;
   @include mixins.desktop-flex-column-aligned-center();
   position: absolute;
-  top: 0;
-  height: 100vh;
+  top: 10%;
+  height: 90vh;
   width: 100%;
   .modal-content {
     @include mixins.desktop-max-width();

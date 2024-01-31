@@ -17,8 +17,9 @@ function Navbar() {
 
   const createScrollToSection = (ref) => (section) => {
     const sectionRef = document.getElementById(section);
-
+    
     if (sectionRef) {
+      closeModal();
       ref.current = sectionRef;
       ref.current.scrollIntoView({ behavior: "smooth" });
     }

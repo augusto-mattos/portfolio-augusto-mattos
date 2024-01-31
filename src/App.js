@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Layout from './components/_layout';
 import Home from './pages/Home';
-import Error503 from './pages/Error503';
+import Error404 from './pages/Error404';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             </Layout>
           }
         />
-        <Route path="*" element={<Error503 />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>
   );

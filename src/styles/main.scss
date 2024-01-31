@@ -2,6 +2,7 @@
 @use "./mixins";
 
 @use "./pages/error503";
+@use "./pages/error404";
 
 @use "./components/navbar";
 @use "./components/header";

@@ -73,6 +73,94 @@ h5 {
   max-width: 615px;
 }
 
+.error-container {
+  display: flex;
+  align-items: center;
+  background-color: #0c0c0c;
+  color: #f1f1f1;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+}
+@media (max-width: 1224px) {
+  .error-container {
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+}
+.error-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #0c0c0c 50%, rgba(217, 217, 217, 0) 90.81%);
+}
+@media (max-width: 1224px) {
+  .error-container::before {
+    background: linear-gradient(180deg, #0c0c0c 50%, rgba(217, 217, 217, 0) 90.81%);
+  }
+}
+.error-container .error-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  z-index: 1;
+}
+@media (max-width: 1224px) {
+  .error-container .error-message {
+    width: 100%;
+  }
+}
+.error-container .error-message p {
+  font-size: 200px;
+  font-weight: 600;
+}
+@media (max-width: 1224px) {
+  .error-container .error-message p {
+    font-size: 110px;
+  }
+}
+.error-container .error-message span {
+  font-size: 72px;
+  font-weight: 500;
+}
+@media (max-width: 1224px) {
+  .error-container .error-message span {
+    font-size: 42px;
+  }
+}
+.error-container .error-message a {
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  text-decoration-line: underline;
+  margin-top: 96px;
+}
+@media (max-width: 1224px) {
+  .error-container .error-message a {
+    font-size: 24px;
+  }
+}
+.error-container .error-image {
+  display: flex;
+  width: 55%;
+}
+@media (max-width: 1224px) {
+  .error-container .error-image {
+    width: 100%;
+    height: 50vh;
+  }
+}
+.error-container .error-image img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -94,9 +182,6 @@ h5 {
   align-items: center;
   gap: 17px;
 }
-.navbar .mail-navbar:hover {
-  text-decoration: underline;
-}
 .navbar .mail-navbar .email-icon {
   height: 20px;
 }
@@ -109,9 +194,6 @@ h5 {
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
-}
-.navbar .navbar-links button:hover {
-  text-decoration: underline;
 }
 .navbar .navbar-links .translation-icon {
   height: 30px;
@@ -362,8 +444,8 @@ h5 {
   align-items: center;
   flex-direction: column;
   position: absolute;
-  top: 0;
-  height: 100vh;
+  top: 10%;
+  height: 90vh;
   width: 100%;
 }
 #lang-modal .modal-content {
