@@ -12,6 +12,9 @@
     display: flex;
     flex-direction: column;
     gap: 18px;
+    @media (max-width: 1024px) {
+        align-items: center;
+    }
     .email-footer,
     .phone-footer,
     .linkedin-footer {
@@ -43,6 +46,12 @@
     @include mixins.desktop-max-width();
     @include mixins.desktop-flex-column-aligned-center();
     gap: 6px;
+    p, 
+    a {
+      @media (max-width: 1024px) {
+        font-size: 12px;
+    }
+    }
     .github-footer {
       display: flex;
       gap: 18px;
