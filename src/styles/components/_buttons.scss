@@ -6,12 +6,23 @@
   background: variables.$black;
   @include mixins.desktop-btn-default();
   border-radius: 30px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    background: variables.$light;
+    color: variables.$black;
+    border: 1px solid variables.$black;
+  }
 }
 
 .btn-secondary {
   color: variables.$black;
   background: variables.$light;
   @include mixins.desktop-btn-default();
+  border-color: variables.$light;
+  transition: all .3s ease-in-out;
+  &:hover {
+    border-color: variables.$black;
+  }
 }
 
 .download-btn {
