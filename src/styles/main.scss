@@ -12,6 +12,8 @@
 @use "./components/footer";
 @use "./components/langSelectorModal";
 @use "./components/navbarHamburger";
+@use "./components/portfolio";
+@use "./components/projectsList";
 
 body {
   @include mixins.desktop-flex-column-aligned-center();

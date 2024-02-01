@@ -1,0 +1,75 @@
+[
+  {
+    "id": "1",
+    "title": "Kasa",
+    "cover": "kasa-miniature.webp",
+    "pictures": ["kasa-1.png", "kasa-2.png"],
+    "resume": "Ce projet prévoyait la refonte complète de l'application Kasa, avec une transition réussie vers une stack JavaScript intégrale, utilisant React et Sass en frontend.",
+    "description": "Le projet visait une refonte totale de l'application Kasa, avec une migration vers une stack complète en JavaScript, intégrant Node.JS côté backend et React côté frontend. Le démarrage du projet React a impliqué le développement de composants et de routes en accord avec les maquettes Figma, en utilisant les données extraites d'un fichier JSON d'annonces immobilières.",
+    "actions": [
+      "Utilisation de Create React App",
+      "Développement de composants React et de routes React Router",
+      "Utilisation d’un fichier JSON avec les annonces de logements pour construire le frontend",
+      "Implémentation des maquettes Figma, en veillant aux logiques de composants réutilisables",
+      "Adoption de Sass pour la stylisation et l’animation de l’interface web"
+    ],
+    "Site": "https://kasa-lake.vercel.app/",
+    "Repo": "https://github.com/augusto-mattos/kasa",
+    "stack": ["SASS", "React", "React Router"]
+  },
+  {
+    "id": "2",
+    "title": "724 Events",
+    "cover": "724events-1.png",
+    "pictures": ["724events-1.png", "724events-2.png"],
+    "resume": "Le projet 724 Events consiste au débogage du site d'une agence d'événementiel, utilisant React DevTools et des tests unitaires et d'intégration.",
+    "description": "Le projet 724 Events se concentre sur le débogage d'un site d'agence d'événementiel fonctionnel mais affecté par des bugs. Utilisant React et Jest, les actions menées ont inclus l'analyse des problèmes, l'examen du code pour identifier d'autres bugs, la résolution des problèmes détectés, et la rédaction du cahier de recette avec des scénarios de test. Les Chrome DevTools ont été employées pour le débogage web, et les tests unitaires et d'intégration existants ont été intégrés pour garantir la stabilité du site après les corrections.",
+    "actions": [
+      "Analyse des problèmes répertoriés en amont",
+      "Examen du code afin d’identifier d’autres bugs",
+      "Résolution des bugs détectés",
+      "Rédaction du cahier de recette avec des scénarios de test",
+      "Utilisation des Chrome DevTools pour le débogage",
+      "Création et application des tests unitaires et d'intégration existants dans le processus de correction des bugs"
+    ],
+    "Site": "https://debuggez-une-application-react-js-am.vercel.app/",
+    "Repo": "https://github.com/augusto-mattos/Debuggez-une-application-React.JS-AM",
+    "stack": ["React", "Jest"]
+  },
+  {
+    "id": "3",
+    "title": "Argent Bank",
+    "cover": "argent-bank-1.png",
+    "pictures": ["argent-bank-1.png", "argent-bank-2.png"],
+    "resume": "Ce projet construit en React compte avec l’implémentation de Redux et l’écriture d’une documentation Swagger pour détailler la proposition des nouvelles routes API.",
+    "description": "Ce projet a commencé par la phase 1, focalisée sur l'authentification des utilisateurs. À partir du HTML et du CSS fournis, une application web a été créée avec React, suivant les normes de Green Code. L'intégration a inclus l'appel à une API pour obtenir les données de l'utilisateur et accéder à l’application. Redux a été implémenté pour gérer l'état global, permettant aux utilisateurs de visiter la page d'accueil, de se connecter, de se déconnecter, et de visualiser leur profil. La modification du nom et du prénom a été restreinte, mais la possibilité de modifier le nom d'utilisateur (username) a été permise. La phase 2 a impliqué l'élaboration d'une documentation Swagger détaillée pour les routes API liées aux transactions, en prenant en compte les besoins spécifiques dans l'évolution de l'application et en garantissant la cohérence avec les développements antérieurs.",
+    "actions": [
+      "Création de l'application web réactive avec React",
+      "Mise en œuvre de Redux pour la gestion de l'état global",
+      "Gestion de l'authentification des utilisateurs avec des Private Routes et appel à une API pour les données utilisateur",
+      "Intégration des pages en suivant les bonnes pratiques de Green Code, en optimisant les images et en créant des composants réutilisables",
+      "Rédaction de la documentation Swagger détaillée pour les routes API de la phase 2, en se basant sur les besoins des transactions"
+    ],
+    "Site": "https://argent-bank-website-am-lesk.vercel.app/",
+    "Repo": "https://github.com/augusto-mattos/ArgentBank-website-AM",
+    "stack": ["React", "Redux", "API Rest", "Swagger"]
+  },
+  {
+    "id": "4",
+    "title": "Nina Carducci",
+    "secondTitle": "Optimisation du site de Nina Carducci",
+    "cover": "nina-carducci-1.png",
+    "pictures": ["nina-carducci-1.png, nina-carducci-2.png"],
+    "resume": "Ce projet consiste à optimiser la performance d’un site web en tenant compte du référencement local, du SEO et de l’accessibilité.",
+    "description": "Ce projet d' optimisation du site web de Nina Carducci, s’est concentré sur plusieurs aspects, la performance, le référencement local, le SEO et l'accessibilité. Suite à un audit détaillé, les actions se sont concentrées sur l'optimisation des images, l'amélioration du code et de la structure, l'intégration du référencement local, ainsi que l'ajout de balises meta pour les réseaux sociaux afin de renforcer la présence en ligne. Des ajustements spécifiques ont également été apportés pour renforcer l'accessibilité du site. Le projet a été conclu avec la remise d'un rapport d'optimisation détaillé, incluant des analyses avant/après basées sur les audits Lighthouse pour la performance et le SEO, Google Rich Snippet pour le référencement local et Wave pour l'accessibilité.",
+    "actions": [
+      "Optimisation globale du site pour améliorer les performances et le référencement SEO",
+      "Mise en œuvre du référencement local en utilisant Schema.org",
+      "Ajout des balises meta pour les réseaux sociaux afin d'optimiser la présence en ligne",
+      "Ajustements pour renforcer l'accessibilité du site"
+    ],
+    "Site": "https://augusto-mattos.github.io/ninacarducci-optmisation/",
+    "Repo": "https://github.com/augusto-mattos/ninacarducci-optmisation",
+    "stack": ["Lighthouse", "Photoshop", "HTML", "CSS"]
+  }
+]

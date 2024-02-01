@@ -1,0 +1,21 @@
+@use "../mixins";
+
+#portfolio {
+  @include mixins.desktop-max-width();
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  width: 100%;
+  gap: 15px;
+  h3,
+  h4 {
+    @media (max-width: 1024px) {
+      margin: 0 42px;
+    }
+  }
+  button {
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+}
