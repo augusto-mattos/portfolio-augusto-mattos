@@ -1,9 +1,28 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import translationIcon from "../assets/icons/translation.png";
 import emailIcon from "../assets/icons/fi-rr-envelope-black.png";
+import Hamburger from './_navbarHamburger';
 import LanguageModal from "../components/_langSelectorModal";
 
 function Navbar() {
+  
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const toogleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen)
+  };
+
+  const handleLinkClick = (section) => {
+    setHamburgerOpen(false); 
+    scrollToSection(section); 
+  };
+  
+  const scrollToSection = (section) => {
+    const sectionRef = document.getElementById(section);
+    
+    if (sectionRef) {
+      sectionRef.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -13,33 +32,17 @@ function Navbar() {
 
   const closeModal = () => {
     setModalIsOpen(false);
+    setHamburgerOpen(false); 
   };
-
-  const createScrollToSection = (ref) => (section) => {
-    const sectionRef = document.getElementById(section);
-    
-    if (sectionRef) {
-      closeModal();
-      ref.current = sectionRef;
-      ref.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const contactRef = useRef(null);
-  const aboutRef = useRef(null);
-  const portfolioRef = useRef(null);
-  const competencesRef = useRef(null);
-
-  const scrollToContact = createScrollToSection(contactRef);
-  const scrollToAboutMe = createScrollToSection(aboutRef);
-  const scrollToPortfolio = createScrollToSection(portfolioRef);
-  const scrollToCompetences = createScrollToSection(competencesRef);
 
   const email = "mattos.aug@gmail.com";
 
   return (
     <>
-      <div className="navbar">
+      <div className={`navbar ${hamburgerOpen ? 'column-layout' : ''}`}>
+        <div className="hamburger" onClick={toogleHamburger} >
+          <Hamburger isOpen={hamburgerOpen} />
+        </div>
         <div className="mail-navbar">
           <img
             src={emailIcon}
@@ -48,11 +51,11 @@ function Navbar() {
           />
           <a href={`mailto:${email}`}>{email}</a>
         </div>
-        <div className="navbar-links">
-          <button onClick={() => scrollToAboutMe("about-me")}>About me</button>
-          <button onClick={() => scrollToPortfolio("portfolio")}>Portfolio</button>
-          <button onClick={() => scrollToCompetences("stack")}>Compétences techniques</button>
-          <button onClick={() => scrollToContact("contact")}>Contact</button>
+        <div className={`navbar-links ${hamburgerOpen ? 'column-layout' : ''}`}>
+          <button onClick={() => handleLinkClick("about-me")}>About me</button>
+          <button onClick={() => handleLinkClick("portfolio")}>Portfolio</button>
+          <button onClick={() => handleLinkClick("stack")}>Compétences techniques</button>
+          <button onClick={() => handleLinkClick("contact")}>Contact</button>
           <button onClick={openModal}>
             <img
               src={translationIcon}
