@@ -31,6 +31,18 @@
   }
 }
 
+.btn-plus {
+  color: variables.$black;
+  background: variables.$light;
+  @include mixins.desktop-btn-default();
+  border: unset;
+  justify-content: flex-end;
+  text-decoration: underline;
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+}
+
 .download-btn {
   width: 24px;
   height: 24px;
