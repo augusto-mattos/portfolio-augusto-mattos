@@ -1,13 +1,19 @@
 import React from "react";
+import projects from "../data/projects";
 import ProjectCard from "./_projectCard";
 
 function ProjectsList() {
   return (
     <>
-    <button className="btn-plus">Voir tous</button>
-    <div className="gallery">
-      <ProjectCard />
-    </div>
+      <div className="gallery">
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.id}
+            id={project.id}
+            project={project}
+          />
+        ))}
+      </div>
     </>
   );
 }

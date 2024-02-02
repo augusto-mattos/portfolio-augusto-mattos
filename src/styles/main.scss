@@ -13,7 +13,9 @@
 @use "./components/langSelectorModal";
 @use "./components/navbarHamburger";
 @use "./components/portfolio";
+@use "./components/projectCard";
 @use "./components/projectsList";
+@use "./components/projectsCarousel";
 
 body {
   @include mixins.desktop-flex-column-aligned-center();

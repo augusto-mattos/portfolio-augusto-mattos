@@ -1,0 +1,27 @@
+@use "../mixins";
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  @include mixins.desktop-max-width();
+  .carousel-container {
+    display: flex;
+    gap: 25px;
+  }
+  button {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 60px;
+    border: none;
+    background-color: unset;
+    &.arrow-previous-project {
+        justify-content: flex-start;
+        left: -5%;
+    }
+    &.arrow-next-project {
+        justify-content: flex-end;
+        left: 5%
+    }
+  }
+}

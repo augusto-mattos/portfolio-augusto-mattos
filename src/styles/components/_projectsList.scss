@@ -1,41 +1,15 @@
-@use "../mixins";
-@use "../variables";
-
-button {
-  @media (max-width: 1024px) {
-    display: none;
-  }
-}
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  flex-wrap: wrap;
   gap: 25px;
+  padding: 0 60px;
+  @media (max-width: 1224px) {
+    padding: 0 30px;
+  }
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    margin: 0 42px;
-  }
-  .project-card {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    @include mixins.border-box-shadow();
-    a {
-      display: flex;
-      color: variables.$black;
-      flex-direction: column;
-      gap: 15px;
-      text-decoration: none;
-      p {
-        color: variables.$gray;
-      }
-    }
-    .project-cover {
-      display: flex;
-      object-fit: contain;
-      width: 100%;
-      @include mixins.border-box-shadow();
-    }
+    gap: 30px;
+    margin: 30px 42px 0 42px;
   }
 }
