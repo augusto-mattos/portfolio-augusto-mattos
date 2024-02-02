@@ -3,7 +3,7 @@ import ProjectsCarousel from "./_projectsCarousel";
 import ProjectsList from "./_projectsList";
 
 function Portfolio() {
-  const [displayAllProjects, setDisplayAllProjects] = useState(false);
+  const [displayAllProjects, setDisplayAllProjects] = useState(window.innerWidth <= 1024);
 
   // muda o state para exibir a lista de projetos ou o carrossel. É chamado no botao acima da galeria
   const toggleDisplayProjects = () => {

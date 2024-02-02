@@ -16,6 +16,7 @@ function ProjectCard(props) {
             src={process.env.PUBLIC_URL + "/images/" + cover}
             alt="miniature projet"
             className="project-cover"
+            loading="lazy"
           />
           <h5>{title}</h5>
           <p>{resume}</p>

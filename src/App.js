@@ -19,7 +19,7 @@ function App() {
             </Layout>
           }
         />
-        <Route path="*" element={<Error404 />} />
+        <Route path="/*" element={<Error404 />} />
       </Routes>
     </Router>
   );

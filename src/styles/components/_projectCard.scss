@@ -10,6 +10,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
   @include mixins.border-box-shadow();
+  @media (max-width: 1224px) {
+    height: unset;
+  }
   a {
     display: flex;
     color: variables.$black;

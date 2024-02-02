@@ -20,7 +20,7 @@
   {
     "id": "2",
     "title": "724 Events",
-    "cover": "724events-1.png",
+    "cover": "724events-miniature.webp",
     "pictures": ["724events-1.png", "724events-2.png"],
     "resume": "Le projet 724 Events consiste au débogage du site d'une agence d'événementiel, utilisant React DevTools et des tests unitaires et d'intégration.",
     "description": "Le projet 724 Events se concentre sur le débogage d'un site d'agence d'événementiel fonctionnel mais affecté par des bugs. Utilisant React et Jest, les actions menées ont inclus l'analyse des problèmes, l'examen du code pour identifier d'autres bugs, la résolution des problèmes détectés, et la rédaction du cahier de recette avec des scénarios de test. Les Chrome DevTools ont été employées pour le débogage web, et les tests unitaires et d'intégration existants ont été intégrés pour garantir la stabilité du site après les corrections.",
@@ -39,7 +39,7 @@
   {
     "id": "3",
     "title": "Argent Bank",
-    "cover": "argent-bank-1.png",
+    "cover": "argent-bank-miniature.webp",
     "pictures": ["argent-bank-1.png", "argent-bank-2.png"],
     "resume": "Ce projet construit en React compte avec l’implémentation de Redux et l’écriture d’une documentation Swagger pour détailler la proposition des nouvelles routes API.",
     "description": "Ce projet a commencé par la phase 1, focalisée sur l'authentification des utilisateurs. À partir du HTML et du CSS fournis, une application web a été créée avec React, suivant les normes de Green Code. L'intégration a inclus l'appel à une API pour obtenir les données de l'utilisateur et accéder à l’application. Redux a été implémenté pour gérer l'état global, permettant aux utilisateurs de visiter la page d'accueil, de se connecter, de se déconnecter, et de visualiser leur profil. La modification du nom et du prénom a été restreinte, mais la possibilité de modifier le nom d'utilisateur (username) a été permise. La phase 2 a impliqué l'élaboration d'une documentation Swagger détaillée pour les routes API liées aux transactions, en prenant en compte les besoins spécifiques dans l'évolution de l'application et en garantissant la cohérence avec les développements antérieurs.",
@@ -58,7 +58,7 @@
     "id": "4",
     "title": "Nina Carducci",
     "secondTitle": "Optimisation du site de Nina Carducci",
-    "cover": "nina-carducci-1.png",
+    "cover": "nina-carducci-miniature.webp",
     "pictures": ["nina-carducci-1.png, nina-carducci-2.png"],
     "resume": "Ce projet consiste à optimiser la performance d’un site web en tenant compte du référencement local, du SEO et de l’accessibilité.",
     "description": "Ce projet d' optimisation du site web de Nina Carducci, s’est concentré sur plusieurs aspects, la performance, le référencement local, le SEO et l'accessibilité. Suite à un audit détaillé, les actions se sont concentrées sur l'optimisation des images, l'amélioration du code et de la structure, l'intégration du référencement local, ainsi que l'ajout de balises meta pour les réseaux sociaux afin de renforcer la présence en ligne. Des ajustements spécifiques ont également été apportés pour renforcer l'accessibilité du site. Le projet a été conclu avec la remise d'un rapport d'optimisation détaillé, incluant des analyses avant/après basées sur les audits Lighthouse pour la performance et le SEO, Google Rich Snippet pour le référencement local et Wave pour l'accessibilité.",
