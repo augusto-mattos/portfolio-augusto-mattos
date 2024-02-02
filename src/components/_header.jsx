@@ -1,6 +1,5 @@
 import React from 'react';
 //import downloadBtn from "../assets/icons/download.png";
-import githubLogo from "../assets/logos/github-mark.png";
 
 function Header() {
 
@@ -25,7 +24,7 @@ function Header() {
       </div>
       <div className="button-header">
         <button className="btn-primary" onClick={scrollToContact}>Contactez-moi !</button>
-        <button className="btn-secondary"><img src={githubLogo} alt="download cv" className="download-btn"/> GitHub</button>
+{/*        <button className="btn-secondary">Download CV <img src={downloadBtn} alt="download cv" className="download-btn"/> </button>*/}
       </div>
     </div>
   );
