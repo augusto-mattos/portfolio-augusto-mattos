@@ -12,6 +12,7 @@ function Error404() {
         <img
           src={cat404}
           alt="error 404 - page not fount"
+          loading="lazy"
         />
       </div>
     </div>

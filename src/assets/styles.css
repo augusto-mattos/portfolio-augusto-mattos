@@ -314,6 +314,9 @@ h5 {
     margin: 18px 0;
   }
 }
+.header .button-header a {
+  text-decoration: none;
+}
 
 .btn-primary {
   color: #ffffff;
