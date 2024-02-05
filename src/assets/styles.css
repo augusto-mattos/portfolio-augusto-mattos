@@ -313,13 +313,13 @@ h5 {
     align-items: center;
   }
 }
-.navbar .navbar-links button {
+.navbar .navbar-links button, .navbar .navbar-links a {
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
 }
 @media (max-width: 1024px) {
-  .navbar .navbar-links button {
+  .navbar .navbar-links button, .navbar .navbar-links a {
     font-size: 18px;
   }
 }
