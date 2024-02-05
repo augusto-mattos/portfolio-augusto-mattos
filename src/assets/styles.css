@@ -181,6 +181,87 @@ h5 {
   object-fit: cover;
 }
 
+.project-page {
+  max-width: 1140px;
+  padding: 0 30px;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  margin: 80px 0;
+}
+@media (max-width: 1224px) {
+  .project-page {
+    max-width: 900px;
+  }
+}
+.project-page .project-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.project-page .project-hero .project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project-page .project-hero .project-description p {
+  font-size: 18px;
+  line-height: 26px;
+}
+.project-page .project-hero .hero-img {
+  width: 85%;
+  align-self: center;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+.project-page .project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+}
+.project-page .project-links a {
+  display: flex;
+  gap: 10px;
+  color: #0c0c0c;
+}
+.project-page .project-links a img {
+  width: 20px;
+  height: 20px;
+}
+.project-page .project-links p {
+  font-size: 18px;
+}
+.project-page .project-links p strong {
+  color: #5f5f5f;
+}
+.project-page .project-actions {
+  display: flex;
+  gap: 50px;
+}
+.project-page .project-actions img {
+  width: 60%;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+.project-page .project-actions ul {
+  font-size: 18px;
+  line-height: 26px;
+}
+.project-page hr {
+  border: 0.5px solid #5f5f5f;
+  border-radius: 1px;
+  width: 100%;
+}
+.project-page .carousel-project-page {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
