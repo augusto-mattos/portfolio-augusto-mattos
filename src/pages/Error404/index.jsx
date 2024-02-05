@@ -1,6 +1,20 @@
-import cat404 from "../../assets//icons/404-adorable-chaton-clavier.webp";
+import React, { useEffect } from "react";
+import cat404 from "../../assets/icons/404-adorable-chaton-clavier.webp";
 
 function Error404() {
+  useEffect(() => {
+    const navbar = document.querySelector(".navbar");
+    const footer = document.querySelector(".footer");
+
+    if (navbar) {
+      navbar.classList.add("d-none");
+    }
+
+    if (footer) {
+      footer.classList.add("d-none");
+    }
+  }, []);
+
   return (
     <div className="error-container">
       <div className="error-message">
