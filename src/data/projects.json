@@ -3,7 +3,7 @@
     "id": "kasa",
     "title": "Kasa",
     "cover": "kasa-miniature.webp",
-    "pictures": ["kasa-1.png", "kasa-2.png"],
+    "pictures": ["kasa-1.webp", "kasa-2.webp"],
     "resume": "Ce projet prévoyait la refonte complète de l'application Kasa, avec une transition réussie vers une stack JavaScript intégrale, utilisant React et Sass en frontend.",
     "description": [
       "Le projet visait une refonte totale de l'application Kasa, avec une migration vers une stack complète en JavaScript, intégrant Node.JS côté backend et React côté frontend.",
@@ -24,7 +24,7 @@
     "id": "724-events",
     "title": "724 Events",
     "cover": "724events-miniature.webp",
-    "pictures": ["724events-1.png", "724events-2.png"],
+    "pictures": ["724events-1.webp", "724events-2.webp"],
     "resume": "Le projet 724 Events consiste au débogage du site d'une agence d'événementiel, utilisant React DevTools et des tests unitaires et d'intégration.",
     "description": [
       "Le projet 724 Events se concentre sur le débogage d'un site d'agence d'événementiel fonctionnel mais affecté par des bugs.",
@@ -46,7 +46,7 @@
     "id": "argent-bank",
     "title": "Argent Bank",
     "cover": "argent-bank-miniature.webp",
-    "pictures": ["argent-bank-1.png", "argent-bank-2.png"],
+    "pictures": ["argent-bank-1.webp", "argent-bank-2.webp"],
     "resume": "Ce projet construit en React compte avec l’implémentation de Redux et l’écriture d’une documentation Swagger pour détailler la proposition des nouvelles routes API.",
     "description": [
       "Ce projet a commencé par la phase 1, focalisée sur l'authentification des utilisateurs. À partir du HTML et du CSS fournis, une application web a été créée avec React, suivant les normes de Green Code. L'intégration a inclus l'appel à une API pour obtenir les données de l'utilisateur et accéder à l’application. Redux a été implémenté pour gérer l'état global, permettant aux utilisateurs de visiter la page d'accueil, de se connecter, de se déconnecter, et de visualiser leur profil. La modification du nom et du prénom a été restreinte, mais la possibilité de modifier le nom d'utilisateur (username) a été permise.",
@@ -68,7 +68,7 @@
     "title": "Nina Carducci",
     "secondTitle": "Optimisation du site de Nina Carducci",
     "cover": "nina-carducci-miniature.webp",
-    "pictures": ["nina-carducci-1.png", "nina-carducci-2.png"],
+    "pictures": ["nina-carducci-1.webp", "nina-carducci-2.webp"],
     "resume": "Ce projet consiste à optimiser la performance d’un site web en tenant compte du référencement local, du SEO et de l’accessibilité.",
     "description": [
       "Ce projet d' optimisation du site web de Nina Carducci, s’est concentré sur plusieurs aspects, la performance, le référencement local, le SEO et l'accessibilité. Suite à un audit détaillé, les actions se sont concentrées sur l'optimisation des images, l'amélioration du code et de la structure, l'intégration du référencement local, ainsi que l'ajout de balises meta pour les réseaux sociaux afin de renforcer la présence en ligne. Des ajustements spécifiques ont également été apportés pour renforcer l'accessibilité du site.",
