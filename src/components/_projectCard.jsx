@@ -18,6 +18,7 @@ function ProjectCard(props) {
             className="project-cover"
             loading="lazy"
           />
+          <hr />
           <h5>{title}</h5>
           <p>{resume}</p>
         </Link>

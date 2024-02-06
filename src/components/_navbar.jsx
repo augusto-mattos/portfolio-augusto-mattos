@@ -63,7 +63,7 @@ function Navbar() {
             <div
               className={`navbar-links ${hamburgerOpen ? "column-layout" : ""}`}
             >
-              <NavLink to={"/"} onClick={toogleHamburger}>Accueil</NavLink>
+              <NavLink to={"/"}>Accueil</NavLink>
               <button onClick={() => handleLinkClick("contact")}>
                 Contact
               </button>
