@@ -189,17 +189,29 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 75px;
-  margin: 80px 0;
+  margin: 0 0 80px 0;
 }
 @media (max-width: 1224px) {
   .project-page {
     max-width: 900px;
   }
 }
+@media (max-width: 1024px) {
+  .project-page {
+    align-self: flex-start;
+  }
+}
 .project-page .project-hero {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin-top: 80px;
+}
+@media (max-width: 1024px) {
+  .project-page .project-hero {
+    margin-right: 30px;
+    padding-right: 30px;
+  }
 }
 .project-page .project-hero .project-description {
   display: flex;
@@ -211,16 +223,27 @@ h5 {
   line-height: 26px;
 }
 .project-page .project-hero .hero-img {
-  width: 85%;
+  width: 90%;
   align-self: center;
   border-radius: 10px;
   box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1024px) {
+  .project-page .project-hero .hero-img {
+    width: 100%;
+  }
 }
 .project-page .project-links {
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 18px;
+}
+@media (max-width: 1024px) {
+  .project-page .project-links {
+    margin-right: 30px;
+    padding-right: 30px;
+  }
 }
 .project-page .project-links a {
   display: flex;
@@ -238,16 +261,43 @@ h5 {
   color: #5f5f5f;
 }
 .project-page .project-actions {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   gap: 50px;
 }
+@media (max-width: 1224px) {
+  .project-page .project-actions {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) {
+  .project-page .project-actions {
+    margin-right: 30px;
+    padding-right: 30px;
+  }
+}
 .project-page .project-actions img {
-  width: 60%;
+  width: 100%;
   object-fit: contain;
   border-radius: 10px;
   box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
 }
-.project-page .project-actions ul {
+@media (max-width: 1224px) {
+  .project-page .project-actions img {
+    width: 90%;
+    align-self: center;
+  }
+}
+@media (max-width: 1024px) {
+  .project-page .project-actions img {
+    width: 100%;
+  }
+}
+.project-page .project-actions .actions-list {
+  width: 100%;
+}
+.project-page .project-actions .actions-list ul {
   font-size: 18px;
   line-height: 26px;
 }
@@ -260,6 +310,12 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+@media (max-width: 1024px) {
+  .project-page .carousel-project-page {
+    margin-right: 30px;
+    padding-right: 30px;
+  }
 }
 
 .navbar {
@@ -795,23 +851,26 @@ h5 {
   }
 }
 @media (max-width: 1024px) {
-  #portfolio h3,
-  #portfolio h4 {
-    margin: 0 42px;
+  #portfolio {
+    margin-right: 30px;
+    padding-right: 30px;
+    margin-left: 30px;
+    padding-left: 30px;
   }
 }
 @media (max-width: 1024px) {
-  #portfolio button {
-    display: none;
+  #portfolio h3,
+  #portfolio h4 {
+    margin: 0 42px;
   }
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 0 0 20px 0;
   width: 100%;
-  height: 350px;
+  height: 400px;
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 10px;
@@ -819,7 +878,7 @@ h5 {
 }
 @media (max-width: 1224px) {
   .project-card {
-    height: unset;
+    height: 430px;
   }
 }
 .project-card a {
@@ -829,6 +888,14 @@ h5 {
   gap: 15px;
   text-decoration: none;
 }
+.project-card a hr {
+  width: 100%;
+  margin: 0;
+  border: 1px solid #f1f1f1;
+}
+.project-card a h5, .project-card a p {
+  padding: 0 20px;
+}
 .project-card a p {
   color: #5f5f5f;
 }
@@ -836,8 +903,6 @@ h5 {
   display: flex;
   object-fit: contain;
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
 }
 
 .gallery .project-card {
@@ -848,7 +913,7 @@ h5 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
-  padding: 0 60px;
+  padding: 30px 60px 0 60px;
 }
 @media (max-width: 1224px) {
   .gallery {
@@ -867,6 +932,7 @@ h5 {
 .carousel {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
   max-width: 1140px;
   padding: 0 30px;
   align-self: center;
@@ -881,6 +947,11 @@ h5 {
   display: flex;
   gap: 25px;
 }
+@media (max-width: 1024px) {
+  .carousel .carousel-container {
+    width: 72%;
+  }
+}
 .carousel button {
   display: flex;
   position: relative;
@@ -891,11 +962,16 @@ h5 {
 }
 .carousel button.arrow-previous-project {
   justify-content: flex-start;
-  left: -5%;
+  left: -10%;
 }
 .carousel button.arrow-next-project {
   justify-content: flex-end;
-  left: 5%;
+  left: 10%;
+}
+@media (max-width: 1024px) {
+  .carousel button {
+    width: 40px;
+  }
 }
 
 body {

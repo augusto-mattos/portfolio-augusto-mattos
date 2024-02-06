@@ -7,15 +7,15 @@
   padding: 40px 30px;
   width: 100%;
   gap: 15px;
+  @media (max-width: 1024px) {
+    @include mixins.mobile-margin-right-padding-right-30();
+    margin-left: 30px;
+    padding-left: 30px;
+  }
   h3,
   h4 {
     @media (max-width: 1024px) {
       margin: 0 42px;
-    }
-  }
-  button {
-    @media (max-width: 1024px) {
-      display: none;
     }
   }
 }

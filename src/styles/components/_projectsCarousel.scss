@@ -3,10 +3,14 @@
 .carousel {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
   @include mixins.desktop-max-width();
   .carousel-container {
     display: flex;
     gap: 25px;
+    @media (max-width: 1024px) {
+      width: 72%;
+    }
   }
   button {
     display: flex;
@@ -17,11 +21,14 @@
     background-color: unset;
     &.arrow-previous-project {
         justify-content: flex-start;
-        left: -5%;
+        left: -10%;
     }
     &.arrow-next-project {
         justify-content: flex-end;
-        left: 5%
+        left: 10%
     }
+    @media (max-width: 1024px) {
+      width: 40px;
+    }  
   }
 }

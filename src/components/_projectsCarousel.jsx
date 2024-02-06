@@ -6,8 +6,22 @@ import arrowRight from "../assets/icons/arrow-right.png";
 
 function ProjectsCarousel() {
     
-  const cardsPerPage = 3;
+  const [cardsPerPage, setCardsPerPage] = useState(getInitialCardsPerPage);
   const slideInterval = 5000;
+
+  useEffect(() => {
+    function windowSize() {
+      setCardsPerPage(getInitialCardsPerPage());
+    }
+
+    window.addEventListener("resize", windowSize);
+
+    return () => window.removeEventListener("resize", windowSize);
+  }, []);
+
+  function getInitialCardsPerPage() {
+    return window.innerWidth < 1024 ? 1 : 3;
+  }
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -55,9 +69,7 @@ function ProjectsCarousel() {
             <ProjectCard
               project={project}
               key={project.id}
-              className={`carousel-slide ${
-                project.id === currentIndex ? "active" : ""
-              }`}
+              isActive={project.id === currentIndex}
             />
           ))}
         </div>

@@ -5,7 +5,7 @@ function ProjectActions(props) {
         src={props.img}
         alt="actions dans le projet"
       />
-      <div className="actions-liste">
+      <div className="actions-list">
         <h3>Mis en œuvre</h3>
         <ul>
           {props.actions.map((action) => (
