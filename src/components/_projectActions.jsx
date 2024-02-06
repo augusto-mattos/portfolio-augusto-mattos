@@ -4,6 +4,7 @@ function ProjectActions(props) {
       <img
         src={props.img}
         alt="actions dans le projet"
+        loading="lazy"
       />
       <div className="actions-list">
         <h3>Mis en œuvre</h3>

@@ -10,6 +10,7 @@ function ProjectHero(props) {
           src={props.img}
           alt="couverture du projet"
           className="hero-img"
+          loading="lazy"
         />
       </div>
     )
