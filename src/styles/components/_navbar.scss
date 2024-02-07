@@ -9,7 +9,7 @@
   padding: 30px;
   background-color: variables.$light;
   &.hamburger-is-open {
-    position: relative;
+    position: absolute;
     padding: 0;
   }
   .navbar {
