@@ -8,6 +8,7 @@
   justify-content: center;
   padding: 30px;
   background-color: variables.$light;
+  z-index: 1;
   &.hamburger-is-open {
     position: absolute;
     padding: 0;

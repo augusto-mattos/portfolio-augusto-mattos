@@ -255,19 +255,36 @@ h5 {
     padding-right: 30px;
   }
 }
-.project-page .project-links a {
+.project-page .project-links .project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+@media (max-width: 1024px) {
+  .project-page .project-links .project-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.project-page .project-links .project-buttons a {
   display: flex;
   gap: 10px;
-  color: #0c0c0c;
+  text-decoration: none;
+  width: 200px;
 }
-.project-page .project-links a img {
-  width: 20px;
-  height: 20px;
+.project-page .project-links .project-buttons a img {
+  width: 25px;
+  height: 25px;
+  filter: invert(100%);
+  transition: all 0.3s ease-in-out;
 }
-.project-page .project-links p {
+.project-page .project-links .project-buttons a:hover img {
+  filter: invert(0%);
+}
+.project-page .project-links .project-buttons p {
   font-size: 18px;
 }
-.project-page .project-links p strong {
+.project-page .project-links .project-buttons p strong {
   color: #5f5f5f;
 }
 .project-page .project-actions {
@@ -340,6 +357,7 @@ h5 {
   justify-content: center;
   padding: 30px;
   background-color: #ffffff;
+  z-index: 1;
 }
 .header.hamburger-is-open {
   position: absolute;
@@ -506,11 +524,6 @@ h5 {
   color: #0c0c0c;
   border: 1px solid #0c0c0c;
 }
-@media (max-width: 1024px) {
-  .btn-primary {
-    font-size: 14px;
-  }
-}
 
 .btn-secondary {
   color: #0c0c0c;
@@ -533,11 +546,6 @@ h5 {
 }
 .btn-secondary:hover {
   border-color: #0c0c0c;
-}
-@media (max-width: 1024px) {
-  .btn-secondary {
-    font-size: 14px;
-  }
 }
 
 .btn-plus {
