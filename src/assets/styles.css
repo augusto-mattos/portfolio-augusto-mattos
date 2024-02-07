@@ -307,6 +307,11 @@ h5 {
   border-radius: 1px;
   width: 100%;
 }
+@media (max-width: 1024px) {
+  .project-page hr {
+    display: none;
+  }
+}
 .project-page .carousel-project-page {
   display: flex;
   flex-direction: column;
@@ -926,7 +931,7 @@ h5 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
-  padding: 30px 60px 0 60px;
+  padding: 30px 90px 0 90px;
 }
 @media (max-width: 1224px) {
   .gallery {
@@ -967,19 +972,17 @@ h5 {
 }
 .carousel button {
   display: flex;
-  position: relative;
   align-items: center;
-  width: 60px;
   border: none;
   background-color: unset;
 }
 .carousel button.arrow-previous-project {
   justify-content: flex-start;
-  left: -10%;
+  left: -5%;
 }
 .carousel button.arrow-next-project {
   justify-content: flex-end;
-  left: 10%;
+  left: 5%;
 }
 @media (max-width: 1024px) {
   .carousel button {
