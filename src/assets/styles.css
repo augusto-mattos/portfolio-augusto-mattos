@@ -205,7 +205,7 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  margin-top: 80px;
+  margin-top: 170px;
 }
 @media (max-width: 1024px) {
   .project-page .project-hero {
@@ -398,66 +398,67 @@ header .navbar button {
   cursor: pointer;
 }
 
-.header {
+.hero {
   max-width: 1140px;
   padding: 0 30px;
   align-self: center;
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 90px;
 }
 @media (max-width: 1224px) {
-  .header {
+  .hero {
     max-width: 900px;
   }
 }
 @media (max-width: 1024px) {
-  .header {
+  .hero {
     align-self: flex-start;
     gap: 18px;
     width: auto;
   }
 }
-.header .header-title {
+.hero .hero-title {
   display: flex;
   flex-direction: column;
   margin-top: 80px;
   gap: 6px;
 }
-.header .header-copy {
+.hero .hero-copy {
   color: #5f5f5f;
   display: flex;
   justify-content: end;
 }
 @media (max-width: 1024px) {
-  .header .header-copy {
+  .hero .hero-copy {
     justify-content: start;
     align-self: flex-start;
   }
 }
-.header .header-copy p {
+.hero .hero-copy p {
   width: 416px;
 }
 @media (max-width: 1024px) {
-  .header .header-copy p {
+  .hero .hero-copy p {
     width: 80%;
   }
 }
-.header .button-header {
+.hero .button-hero {
   display: flex;
   justify-content: center;
   margin: 68px 0;
   gap: 52px;
 }
 @media (max-width: 1024px) {
-  .header .button-header {
+  .hero .button-hero {
     flex-direction: column;
     max-width: 100%;
     gap: 10px;
     margin: 18px 0;
   }
 }
-.header .button-header a {
+.hero .button-hero a {
   text-decoration: none;
 }
 

@@ -1,22 +1,23 @@
 @use "../variables";
 @use "../mixins";
 
-.header {
+.hero {
   @include mixins.desktop-max-width();
   display: flex;
   flex-direction: column;
+  margin-top: 90px;
   @media (max-width: 1024px) {
     align-self: flex-start;
     gap: 18px;
     width: auto;
   }
-  .header-title {
+  .hero-title {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
     gap: 6px;
   }
-  .header-copy {
+  .hero-copy {
     color: variables.$gray;
     display: flex;
     justify-content: end;
@@ -31,7 +32,7 @@
       }
     }
   }
-  .button-header {
+  .button-hero {
     display: flex;
     justify-content: center;
     margin: 68px 0;

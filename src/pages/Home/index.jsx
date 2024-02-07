@@ -1,12 +1,12 @@
-import Header from "../../components/_header";
 import About from "../../components/_about";
 import Competences from "../../components/_competences";
 import Portfolio from "../../components/_portfolio";
+import Hero from "../../components/_hero";
 
 function Home() {
   return (
     <>
-      <Header />
+      <Hero />
       <About />
       <Portfolio />
       <Competences />
