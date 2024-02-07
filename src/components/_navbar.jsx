@@ -39,35 +39,37 @@ function Navbar() {
 
   return (
     <>
-      <header className={`navbar ${hamburgerOpen ? "column-layout" : ""}`}>
-        <div className="hamburger" onClick={toogleHamburger}>
-          <Hamburger isOpen={hamburgerOpen} />
+      <header>
+        <div className={`navbar ${hamburgerOpen ? "column-layout" : ""}`}>
+          <div className="hamburger" onClick={toogleHamburger}>
+            <Hamburger isOpen={hamburgerOpen} />
+          </div>
+          <div className="mail-navbar">
+            <img src={emailIcon} className="email-icon" alt="email icon" />
+            <a href={`mailto:${email}`}>{email}</a>
+          </div>
+          <nav className={`navbar-links ${hamburgerOpen ? "column-layout" : ""}`}>
+            <Link to={"/"} onClick={() => handleLinkClick("about-me")}>
+              About me
+            </Link>
+            <Link to={"/"} onClick={() => handleLinkClick("portfolio")}>
+              Portfolio
+            </Link>
+            <Link to={"/"} onClick={() => handleLinkClick("stack")}>
+              Compétences techniques
+            </Link>
+            <Link to={"/"} onClick={() => handleLinkClick("contact")}>
+              Contact
+            </Link>
+            <button onClick={openModal}>
+              <img
+                src={translationIcon}
+                className="translation-icon"
+                alt="Translation Icon"
+              />
+            </button>
+          </nav>
         </div>
-        <div className="mail-navbar">
-          <img src={emailIcon} className="email-icon" alt="email icon" />
-          <a href={`mailto:${email}`}>{email}</a>
-        </div>
-        <nav className={`navbar-links ${hamburgerOpen ? "column-layout" : ""}`}>
-          <Link to={"/"} onClick={() => handleLinkClick("about-me")}>
-            About me
-          </Link>
-          <Link to={"/"} onClick={() => handleLinkClick("portfolio")}>
-            Portfolio
-          </Link>
-          <Link to={"/"} onClick={() => handleLinkClick("stack")}>
-            Compétences techniques
-          </Link>
-          <Link to={"/"} onClick={() => handleLinkClick("contact")}>
-            Contact
-          </Link>
-          <button onClick={openModal}>
-            <img
-              src={translationIcon}
-              className="translation-icon"
-              alt="Translation Icon"
-            />
-          </button>
-        </nav>
       </header>
       <LanguageModal
         isOpen={modalIsOpen}
