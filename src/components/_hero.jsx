@@ -1,7 +1,7 @@
 import React from 'react';
 import downloadBtn from "../assets/icons/download.png";
 
-function Header() {
+function Hero() {
 
   const scrollToContact = () => {    
     const contactSection = document.getElementById("contact");
@@ -12,22 +12,22 @@ function Header() {
   };
 
   return (
-    <div className="header">
-      <div className="header-title">
+    <section className="hero">
+      <div className="hero-title">
         <h1>Augusto Mattos</h1>
         <h2>Développeur Web</h2>
       </div>
-      <div className="header-copy">
+      <div className="hero-copy">
         <p>
           Spécialisé en React.js, je développe des expériences web de qualité alliant performance, SEO optimisé et accessibilité.
         </p>
       </div>
-      <div className="button-header">
+      <div className="button-hero">
         <button className="btn-primary" onClick={scrollToContact}>Contactez-moi !</button>
         <a className="btn-secondary" href="/downloads/CV_Augusto-MATTOS.pdf" download>Download CV <img src={downloadBtn} alt="download cv" className="download-btn"/> </a>
       </div>
-    </div>
+    </section>
   );
 }
 
-export default Header;
+export default Hero;

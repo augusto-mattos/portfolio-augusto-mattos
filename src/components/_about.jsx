@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div id="about-me" className="about-me">
+    <section id="about-me" className="about-me">
       <h3>About me</h3>
       <p>
         Avec 13 ans d'expérience dans le monde de l'éducation, j'ai tracé mon
@@ -18,7 +18,7 @@ function About() {
         compétences pour tisser un lien entre mon bagage éducatif et la création
         technologique.
         </p>
-    </div>
+    </section>
   );
 }
 

@@ -7,14 +7,14 @@ import githubLogo from "../assets/logos/github-mark-white.png";
 
 function Footer() {
   const email = "mattos.aug@gmail.com";
-  const numeroDeTelefone = "+33 07 87 20 41 18";
+  const phone = "+33 07 87 20 41 18";
   const linkedInProfile = "https://www.linkedin.com/in/augusto-mattos/";
   const githubProfile = "https://github.com/augusto-mattos";
 
   const contactRef = useRef(null);
 
   return (
-    <div className="footer">
+    <footer className="footer">
       <div id="contact" ref={contactRef} className="contact-footer">
         <h3>Contact</h3>
         <h4>Travaillons ensemble !</h4>
@@ -30,7 +30,7 @@ function Footer() {
             src={phoneIcon}
             alt="phone icon"
           />
-          <NavLink to={`tel:${numeroDeTelefone}`}>{numeroDeTelefone}</NavLink>
+          <NavLink to={`tel:${phone}`}>{phone}</NavLink>
         </div>
         <div className="linkedin-footer">
           <img
@@ -63,7 +63,7 @@ function Footer() {
         </NavLink>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

@@ -12,14 +12,14 @@ function Portfolio() {
   const textButton = displayAllProjects ? "Voir carrousel" : "Voir tous";
 
   return (
-    <div id="portfolio">
+    <section id="portfolio">
       <h3>Portfolio</h3>
       <h4>Consultez mon portfolio</h4>
       <button onClick={toggleDisplayProjects} className="btn-plus">
         {textButton}
       </button>
       {displayAllProjects ? <ProjectsList /> : <ProjectsCarousel />}
-    </div>
+    </section>
   );
 }
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import translationIcon from "../assets/icons/translation.png";
 import emailIcon from "../assets/icons/fi-rr-envelope-black.png";
 import Hamburger from "./_navbarHamburger";
@@ -37,86 +37,44 @@ function Navbar() {
 
   const email = "mattos.aug@gmail.com";
 
-  const location = useLocation();
-  const currentUrl = location.pathname;
-  const navbarProjet = currentUrl.includes("projet");
-
   return (
     <>
-      {navbarProjet ? (
-        <>
-          <div className={`navbar ${hamburgerOpen ? "column-layout" : ""}`}>
-            <div
-              className="hamburger"
-              onClick={toogleHamburger}
-            >
-              <Hamburger isOpen={hamburgerOpen} />
-            </div>
-            <div className="mail-navbar">
-              <img
-                src={emailIcon}
-                className="email-icon"
-                alt="email icon"
-              />
-              <a href={`mailto:${email}`}>{email}</a>
-            </div>
-            <div
-              className={`navbar-links ${hamburgerOpen ? "column-layout" : ""}`}
-            >
-              <NavLink to={"/"}>Accueil</NavLink>
-              <button onClick={() => handleLinkClick("contact")}>
-                Contact
-              </button>
-            </div>
+      <header className={`header ${hamburgerOpen ? "hamburger-is-open" : ""}`}>
+        <div className={`navbar ${hamburgerOpen ? "column-layout" : ""}`}>
+          <div className="hamburger" onClick={toogleHamburger}>
+            <Hamburger isOpen={hamburgerOpen} />
           </div>
-        </>
-      ) : (
-        <>
-          <div className={`navbar ${hamburgerOpen ? "column-layout" : ""}`}>
-            <div
-              className="hamburger"
-              onClick={toogleHamburger}
-            >
-              <Hamburger isOpen={hamburgerOpen} />
-            </div>
-            <div className="mail-navbar">
-              <img
-                src={emailIcon}
-                className="email-icon"
-                alt="email icon"
-              />
-              <a href={`mailto:${email}`}>{email}</a>
-            </div>
-            <div
-              className={`navbar-links ${hamburgerOpen ? "column-layout" : ""}`}
-            >
-              <button onClick={() => handleLinkClick("about-me")}>
-                About me
-              </button>
-              <button onClick={() => handleLinkClick("portfolio")}>
-                Portfolio
-              </button>
-              <button onClick={() => handleLinkClick("stack")}>
-                Compétences techniques
-              </button>
-              <button onClick={() => handleLinkClick("contact")}>
-                Contact
-              </button>
-              <button onClick={openModal}>
-                <img
-                  src={translationIcon}
-                  className="translation-icon"
-                  alt="Translation Icon"
-                />
-              </button>
-            </div>
+          <div className="mail-navbar">
+            <img src={emailIcon} className="email-icon" alt="email icon" />
+            <a href={`mailto:${email}`}>{email}</a>
           </div>
-          <LanguageModal
-            isOpen={modalIsOpen}
-            closeModal={closeModal}
-          />
-        </>
-      )}
+          <nav className={`navbar-links ${hamburgerOpen ? "column-layout" : ""}`}>
+            <Link to={"/"} onClick={() => handleLinkClick("about-me")}>
+              About me
+            </Link>
+            <Link to={"/"} onClick={() => handleLinkClick("portfolio")}>
+              Portfolio
+            </Link>
+            <Link to={"/"} onClick={() => handleLinkClick("stack")}>
+              Compétences techniques
+            </Link>
+            <Link to={"/"} onClick={() => handleLinkClick("contact")}>
+              Contact
+            </Link>
+            <button onClick={openModal}>
+              <img
+                src={translationIcon}
+                className="translation-icon"
+                alt="Translation Icon"
+              />
+            </button>
+          </nav>
+        </div>
+      </header>
+      <LanguageModal
+        isOpen={modalIsOpen}
+        closeModal={closeModal}
+      />
     </>
   );
 }

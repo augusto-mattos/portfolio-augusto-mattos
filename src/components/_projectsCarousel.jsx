@@ -68,8 +68,8 @@ function ProjectsCarousel() {
           {visibleProjects.map((project) => (
             <ProjectCard
               project={project}
-              key={project.id}
-              isActive={project.id === currentIndex}
+              // key={project.id}
+              // isActive={project.id === currentIndex}
             />
           ))}
         </div>
