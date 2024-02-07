@@ -39,7 +39,7 @@ function Navbar() {
 
   return (
     <>
-      <header>
+      <header className={`${hamburgerOpen ? "hamburger-is-open" : ""}`}>
         <div className={`navbar ${hamburgerOpen ? "column-layout" : ""}`}>
           <div className="hamburger" onClick={toogleHamburger}>
             <Hamburger isOpen={hamburgerOpen} />

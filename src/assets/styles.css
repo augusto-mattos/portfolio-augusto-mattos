@@ -211,6 +211,7 @@ h5 {
   .project-page .project-hero {
     margin-right: 30px;
     padding-right: 30px;
+    margin-top: 130px;
   }
 }
 .project-page .project-hero .project-description {
@@ -326,6 +327,10 @@ header {
   padding: 30px;
   background-color: #ffffff;
 }
+header.hamburger-is-open {
+  position: relative;
+  padding: 0;
+}
 header .navbar {
   display: flex;
   justify-content: space-between;
@@ -417,6 +422,7 @@ header .navbar button {
     align-self: flex-start;
     gap: 18px;
     width: auto;
+    margin-top: 50px;
   }
 }
 .hero .hero-title {

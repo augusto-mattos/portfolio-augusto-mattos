@@ -8,6 +8,10 @@ header {
   justify-content: center;
   padding: 30px;
   background-color: variables.$light;
+  &.hamburger-is-open {
+    position: relative;
+    padding: 0;
+  }
   .navbar {
     display: flex;
     justify-content: space-between; 
