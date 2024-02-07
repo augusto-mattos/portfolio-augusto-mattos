@@ -14,7 +14,7 @@ function Footer() {
   const contactRef = useRef(null);
 
   return (
-    <div className="footer">
+    <footer className="footer">
       <div id="contact" ref={contactRef} className="contact-footer">
         <h3>Contact</h3>
         <h4>Travaillons ensemble !</h4>
@@ -63,7 +63,7 @@ function Footer() {
         </NavLink>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

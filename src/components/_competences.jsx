@@ -10,7 +10,7 @@ import githubLogo from "../assets/logos/github-mark.png";
 
 function Competences() {
   return (
-    <div id="stack" className="competences-container">
+    <section id="stack" className="competences-container">
       <div className="competences">
         <div className="stack-logo">
         <img
@@ -76,7 +76,7 @@ function Competences() {
         <p>GitHub</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

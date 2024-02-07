@@ -12,7 +12,7 @@ function Hero() {
   };
 
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="hero-title">
         <h1>Augusto Mattos</h1>
         <h2>Développeur Web</h2>
@@ -26,7 +26,7 @@ function Hero() {
         <button className="btn-primary" onClick={scrollToContact}>Contactez-moi !</button>
         <a className="btn-secondary" href="/downloads/CV_Augusto-MATTOS.pdf" download>Download CV <img src={downloadBtn} alt="download cv" className="download-btn"/> </a>
       </div>
-    </div>
+    </section>
   );
 }
 

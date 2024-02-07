@@ -319,7 +319,7 @@ h5 {
   }
 }
 
-header {
+.header {
   position: fixed;
   width: 100%;
   display: flex;
@@ -327,11 +327,11 @@ header {
   padding: 30px;
   background-color: #ffffff;
 }
-header.hamburger-is-open {
+.header.hamburger-is-open {
   position: relative;
   padding: 0;
 }
-header .navbar {
+.header .navbar {
   display: flex;
   justify-content: space-between;
   font-weight: 400;
@@ -341,63 +341,63 @@ header .navbar {
   width: 100%;
 }
 @media (max-width: 1224px) {
-  header .navbar {
+  .header .navbar {
     max-width: 900px;
   }
 }
-header .navbar.column-layout {
+.header .navbar.column-layout {
   flex-direction: column;
   align-items: center;
   margin: 0;
   padding: 30px;
   background: #f1f1f1;
 }
-header .navbar .mail-navbar {
+.header .navbar .mail-navbar {
   display: flex;
   align-items: center;
   gap: 17px;
 }
 @media (max-width: 1024px) {
-  header .navbar .mail-navbar {
+  .header .navbar .mail-navbar {
     display: none;
   }
 }
-header .navbar .mail-navbar .email-icon {
+.header .navbar .mail-navbar .email-icon {
   height: 20px;
 }
-header .navbar .navbar-links {
+.header .navbar .navbar-links {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 @media (max-width: 1024px) {
-  header .navbar .navbar-links {
+  .header .navbar .navbar-links {
     display: none;
   }
-  header .navbar .navbar-links.column-layout {
+  .header .navbar .navbar-links.column-layout {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-header .navbar .navbar-links button, header .navbar .navbar-links a {
+.header .navbar .navbar-links button, .header .navbar .navbar-links a {
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
 }
 @media (max-width: 1024px) {
-  header .navbar .navbar-links button, header .navbar .navbar-links a {
+  .header .navbar .navbar-links button, .header .navbar .navbar-links a {
     font-size: 18px;
   }
 }
-header .navbar .navbar-links .translation-icon {
+.header .navbar .navbar-links .translation-icon {
   height: 30px;
 }
-header .navbar a {
+.header .navbar a {
   text-decoration: none;
   color: #0c0c0c;
 }
-header .navbar button {
+.header .navbar button {
   border: none;
   background-color: unset;
   cursor: pointer;
