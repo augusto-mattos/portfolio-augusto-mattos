@@ -65,8 +65,7 @@
   },
   {
     "id": "nina-carducci",
-    "title": "Nina Carducci",
-    "secondTitle": "Optimisation du site de Nina Carducci",
+    "title": "Optimisation du site de Nina Carducci",
     "cover": "nina-carducci-miniature.webp",
     "pictures": ["nina-carducci-1.webp", "nina-carducci-2.webp"],
     "resume": "Ce projet consiste à optimiser la performance d’un site web en tenant compte du référencement local, du SEO et de l’accessibilité.",
@@ -83,5 +82,28 @@
     "Site": "https://augusto-mattos.github.io/ninacarducci-optmisation/",
     "Repo": "https://github.com/augusto-mattos/ninacarducci-optmisation",
     "stack": ["Lighthouse", "Photoshop", "HTML", "CSS"]
+  },
+  {
+    "id": "sophie-bluel",
+    "title": "Portfolio Sophie Bluel",
+    "cover": "sophie-bluel-miniature.webp",
+    "pictures": ["sophie-bluel-1.webp", "sophie-bluel-2.webp"],
+    "resume": "Ce projet vise à développer les fonctionnalités principales du portfolio de Sophie Bluel sur le front-end.",
+    "description": [
+      "L'objectif principal de ce projet était de concevoir un site web opérationnel pour mettre en valeur les travaux de l'architecte Sophie Bluel. Pour ce faire, une page dédiée à la présentation des travaux a été créée à partir du code HTML fourni. Cette page permet de récupérer et d'afficher dynamiquement les projets existants depuis le serveur back-end.",
+      "De plus, le projet incluait la mise en place d'un système de connexion destiné à l'administrateur du site, ainsi que l'ajout de fonctionnalités permettant de télécharger de nouveaux médias et de supprimer des travaux existants."
+    ],
+    "actions": [
+      "Récupération dynamique des travaux depuis le back-end pour leur affichage en front-end",
+      "Manipulation du DOM pour assurer une expérience utilisateur fluide",
+      "Intégration du design des pages pour une présentation esthétique et fonctionnelle",
+      "Mise en place d'un système d’authentification utilisateur via une API sécurisée",
+      "Création d'un système de suppression des travaux existants et d'envoi de nouveaux projets vers le back-end via un formulaire de modalité interactive",
+      "Traitement des réponses de l’API afin d'afficher de manière dynamique les nouveaux médias dans la modalité"
+    ],
+    "Site": "https://augusto-mattos.github.io/Portfolio-architecte-OC-AM/",
+    "Repo": "https://github.com/augusto-mattos/Portfolio-architecte-OC-AM",
+    "stack": ["JavaScript", "CSS", "HTML", "API Rest"]
   }
 ]
+ 
