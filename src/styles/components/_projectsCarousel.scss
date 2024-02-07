@@ -15,7 +15,6 @@
   button {
     display: flex;
     align-items: center;
-    //width: 60px;
     border: none;
     background-color: unset;
     &.arrow-previous-project {
@@ -25,9 +24,6 @@
     &.arrow-next-project {
         justify-content: flex-end;
         left: 5%
-    }
-    @media (max-width: 1024px) {
-      width: 40px;
-    }  
+    } 
   }
 }
