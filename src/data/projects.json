@@ -18,7 +18,7 @@
     ],
     "Site": "https://kasa-lake.vercel.app/",
     "Repo": "https://github.com/augusto-mattos/kasa",
-    "stack": ["SASS", "React", "React Router"]
+    "stack": ["Sass", "React", "React Router"]
   },
   {
     "id": "724-events",
@@ -81,7 +81,7 @@
     ],
     "Site": "https://augusto-mattos.github.io/ninacarducci-optmisation/",
     "Repo": "https://github.com/augusto-mattos/ninacarducci-optmisation",
-    "stack": ["Lighthouse", "Photoshop", "HTML", "CSS"]
+    "stack": ["HTML", "CSS", "SEO", "Performance", "Lighthouse", "Photoshop"]
   },
   {
     "id": "sophie-bluel",
@@ -103,7 +103,7 @@
     ],
     "Site": "https://augusto-mattos.github.io/Portfolio-architecte-OC-AM/",
     "Repo": "https://github.com/augusto-mattos/Portfolio-architecte-OC-AM",
-    "stack": ["JavaScript", "CSS", "HTML", "API Rest"]
+    "stack": ["HTML", "CSS", "JavaScript", "API Rest"]
   }
 ]
  

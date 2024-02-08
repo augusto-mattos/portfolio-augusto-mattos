@@ -1,0 +1,14 @@
+@use "../variables";
+
+.stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-right: 30px;
+  span {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: variables.$gray;
+    color: variables.$light;
+  }
+}
