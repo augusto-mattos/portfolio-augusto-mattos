@@ -250,6 +250,8 @@ h5 {
 }
 @media (max-width: 1024px) {
   .project-page .project-links {
+    margin-right: 30px;
+    padding-right: 30px;
     flex-direction: column;
     align-items: center;
   }
@@ -987,11 +989,50 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-right: 30px;
   padding-right: 30px;
 }
 .stack-tags span {
   padding: 8px;
   border-radius: 4px;
+}
+.stack-tags span.html-tag {
+  background-color: #e44d26;
+  color: #ffffff;
+}
+.stack-tags span.css-tag {
+  background-color: #264de4;
+  color: #ffffff;
+}
+.stack-tags span.sass-tag {
+  background-color: #cd6799;
+  color: #ffffff;
+}
+.stack-tags span.js-tag {
+  background-color: #f7df1e;
+  color: #0c0c0c;
+}
+.stack-tags span.react-tag {
+  background-color: #61dafb;
+  color: #0c0c0c;
+}
+.stack-tags span.react-router-tag {
+  background-color: #f44250;
+  color: #ffffff;
+}
+.stack-tags span.redux-tag {
+  background-color: #764abc;
+  color: #ffffff;
+}
+.stack-tags span.seo-tag {
+  background-color: #add8e6;
+  color: #0c0c0c;
+}
+.stack-tags span.ps-tag {
+  background-color: #31a8ff;
+  color: #0c0c0c;
+}
+.stack-tags span.default-tag {
   background-color: #5f5f5f;
   color: #ffffff;
 }

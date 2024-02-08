@@ -1,44 +1,56 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function ProjectTags(props) {
-  useEffect(() => {
-    const spanTags = document.querySelectorAll("span");
+  const [tagClasses, setTagClasses] = useState({});
 
-    spanTags.forEach((tag) => {
-      const text = tag.textContent.trim();
-      if (text === "HTML") {
-        tag.classList.add("html-tag");
+  useEffect(() => {
+    const classes = {};
+    const tags = props.stack.split(", ").map((item) => item.trim());
+
+    tags.forEach((tag) => {
+      switch (tag) {
+        case "HTML":
+          classes[tag] = "html-tag";
+          break;
+        case "CSS":
+          classes[tag] = "css-tag";
+          break;
+        case "Sass":
+          classes[tag] = "sass-tag";
+          break;
+        case "JavaScript":
+          classes[tag] = "js-tag";
+          break;
+        case "React":
+          classes[tag] = "react-tag";
+          break;
+        case "React Router":
+          classes[tag] = "react-router-tag";
+          break;
+        case "Redux":
+          classes[tag] = "redux-tag";
+          break;
+        case "SEO":
+          classes[tag] = "seo-tag";
+          break;
+        case "Photoshop":
+          classes[tag] = "ps-tag";
+          break;
+        default:
+          classes[tag] = "default-tag";
       }
-      if (text === "CSS") {
-        tag.classList.add("css-tag");
-      }
-      if (text === "Sass") {
-        tag.classList.add("sass-tag");
-      }
-      if (text === "JavaScript") {
-        tag.classList.add("js-tag");
-      }
-      if (text === "React") {
-        tag.classList.add("react-tag");
-      }
-      if (text === "React Router") {
-        tag.classList.add("react-router-tag");
-      }
-      if (text === "API Rest") {
-        tag.classList.add("api-tag");
-      }
-      if (text === "Redux") {
-        tag.classList.add("redux-tag");
-      }
-      if (text === "SEO") {
-        tag.classList.add("seo-tag");
-      } 
     });
-  }, []);
+
+    setTagClasses(classes);
+  }, [props.stack]);
 
   const stackList = props.stack
     .split(", ")
-    .map((item, index) => <span key={index}>{item}</span>);
+    .map((item, index) => (
+      <span key={index} className={tagClasses[item.trim()]}>
+        {item.trim()}
+      </span>
+    ));
 
   return <section className="stack-tags">{stackList}</section>;
 }
