@@ -5,7 +5,6 @@ import githubLogo from "../assets/logos/github-mark.png";
 function ProjectLinks(props) {
   return (
     <div className="project-links">
-      <div className="project-buttons">
       <Link
         to={props.site}
         target="_blank"
@@ -30,11 +29,6 @@ function ProjectLinks(props) {
         />
         Découvrir le code
       </Link>
-      </div>
-      <p>
-        <strong>Stack : </strong>
-        {props.stack}
-      </p>
     </div>
   );
 }

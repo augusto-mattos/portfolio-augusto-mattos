@@ -101,6 +101,7 @@ h5 {
   height: 100vh;
   width: 100%;
   justify-content: center;
+  z-index: 1000;
 }
 @media (max-width: 1224px) {
   .error-container {
@@ -230,61 +231,48 @@ h5 {
   line-height: 26px;
 }
 .project-page .project-hero .hero-img {
-  width: 90%;
+  width: 100%;
   align-self: center;
   margin-top: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 1024px) {
   .project-page .project-hero .hero-img {
-    width: 100%;
     margin-top: 10px;
     margin-bottom: 15px;
   }
 }
 .project-page .project-links {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 18px;
-}
-@media (max-width: 1024px) {
-  .project-page .project-links {
-    margin-right: 30px;
-    padding-right: 30px;
-  }
-}
-.project-page .project-links .project-buttons {
-  display: flex;
   justify-content: center;
   gap: 25px;
 }
 @media (max-width: 1024px) {
-  .project-page .project-links .project-buttons {
+  .project-page .project-links {
     flex-direction: column;
     align-items: center;
   }
 }
-.project-page .project-links .project-buttons a {
+.project-page .project-links a {
   display: flex;
   gap: 10px;
   text-decoration: none;
   width: 200px;
 }
-.project-page .project-links .project-buttons a img {
+.project-page .project-links a img {
   width: 25px;
   height: 25px;
   filter: invert(100%);
   transition: all 0.3s ease-in-out;
 }
-.project-page .project-links .project-buttons a:hover img {
+.project-page .project-links a:hover img {
   filter: invert(0%);
 }
-.project-page .project-links .project-buttons p {
+.project-page .project-links p {
   font-size: 18px;
 }
-.project-page .project-links .project-buttons p strong {
+.project-page .project-links p strong {
   color: #5f5f5f;
 }
 .project-page .project-actions {
@@ -307,18 +295,12 @@ h5 {
 .project-page .project-actions img {
   width: 100%;
   object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 1224px) {
   .project-page .project-actions img {
-    width: 90%;
     align-self: center;
-  }
-}
-@media (max-width: 1024px) {
-  .project-page .project-actions img {
-    width: 100%;
   }
 }
 .project-page .project-actions .actions-list {
@@ -864,7 +846,6 @@ h5 {
   width: 2rem;
   height: 0.25rem;
   border-radius: 10px;
-  margin: 0 30px;
   background-color: #0c0c0c;
   transition: all 0.3s linear;
 }
@@ -908,8 +889,8 @@ h5 {
   height: 400px;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 1224px) {
   .project-card {
@@ -1000,6 +981,19 @@ h5 {
 .carousel button.arrow-next-project {
   justify-content: flex-end;
   left: 5%;
+}
+
+.stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-right: 30px;
+}
+.stack-tags span {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #5f5f5f;
+  color: #ffffff;
 }
 
 body {

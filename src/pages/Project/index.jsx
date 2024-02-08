@@ -7,6 +7,7 @@ import ProjectHero from "../../components/_projectHero";
 import ProjectLinks from "../../components/_projectLinks";
 import ProjectActions from "../../components/_projectActions";
 import ProjectsCarousel from "../../components/_projectsCarousel";
+import ProjectTags from "../../components/_projectTags";
 
 function Project() {
   const location = useLocation();
@@ -36,9 +37,8 @@ function Project() {
   const projectRepo = projetId.Repo;
   const stackList = projetId.stack.join(", ");
 
-
   return (
-    <div className="project-page" ref={scrollToRef}>
+    <section className="project-page" ref={scrollToRef}>
       <ProjectHero
         title={projectName}
         img={projectImgHero}
@@ -48,18 +48,18 @@ function Project() {
       <ProjectLinks
         site={projectURL}
         repo={projectRepo}
-        stack={stackList}
       />
       <ProjectActions
         img={projectImgActions}
         actions={projectActions}
       />
+      <ProjectTags stack={stackList} />
       <hr />
       <div className="carousel-project-page">
         <h4>D'autres projets</h4>
         <ProjectsCarousel />
       </div>
-    </div>
+    </section>
   );
 }
 

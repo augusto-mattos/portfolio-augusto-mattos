@@ -17,6 +17,7 @@
 @use "./components/projectCard";
 @use "./components/projectsList";
 @use "./components/projectsCarousel";
+@use "./components/projectTags";
 
 body {
   @include mixins.desktop-flex-column-aligned-center();
