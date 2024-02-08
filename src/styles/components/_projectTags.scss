@@ -10,7 +10,7 @@
     border-radius: 4px;
     &.html-tag {
       background-color: #e44d26;
-      color: variables.$light;
+      color: variables.$black;
     }
     &.css-tag {
       background-color: #264de4;
@@ -18,7 +18,7 @@
     }
     &.sass-tag {
       background-color: #cd6799;
-      color: variables.$light;
+      color: variables.$black;
     }
     &.js-tag {
       background-color: #f7df1e;
@@ -30,7 +30,7 @@
     }
     &.react-router-tag {
       background-color: #f44250;
-      color: variables.$light;
+      color: variables.$black;
     }
     &.redux-tag {
       background-color: #764abc;

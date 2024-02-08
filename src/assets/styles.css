@@ -998,7 +998,7 @@ h5 {
 }
 .stack-tags span.html-tag {
   background-color: #e44d26;
-  color: #ffffff;
+  color: #0c0c0c;
 }
 .stack-tags span.css-tag {
   background-color: #264de4;
@@ -1006,7 +1006,7 @@ h5 {
 }
 .stack-tags span.sass-tag {
   background-color: #cd6799;
-  color: #ffffff;
+  color: #0c0c0c;
 }
 .stack-tags span.js-tag {
   background-color: #f7df1e;
@@ -1018,7 +1018,7 @@ h5 {
 }
 .stack-tags span.react-router-tag {
   background-color: #f44250;
-  color: #ffffff;
+  color: #0c0c0c;
 }
 .stack-tags span.redux-tag {
   background-color: #764abc;
