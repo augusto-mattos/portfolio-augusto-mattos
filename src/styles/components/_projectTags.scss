@@ -1,14 +1,52 @@
 @use "../variables";
+@use "../mixins";
 
 .stack-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  padding-right: 30px;
-  span {
+  @include mixins.mobile-margin-right-padding-right-30();  span {
     padding: 8px;
     border-radius: 4px;
-    background-color: variables.$gray;
-    color: variables.$light;
+    &.html-tag {
+      background-color: #e44d26;
+      color: variables.$black;
+    }
+    &.css-tag {
+      background-color: #264de4;
+      color: variables.$light;
+    }
+    &.sass-tag {
+      background-color: #cd6799;
+      color: variables.$black;
+    }
+    &.js-tag {
+      background-color: #f7df1e;
+      color: variables.$black;
+    }
+    &.react-tag {
+      background-color: #61dafb;
+      color: variables.$black;
+    }
+    &.react-router-tag {
+      background-color: #f44250;
+      color: variables.$black;
+    }
+    &.redux-tag {
+      background-color: #764abc;
+      color: variables.$light;
+    }
+    &.seo-tag {
+      background-color: #add8e6;
+      color: variables.$black;
+    }
+    &.ps-tag {
+      background-color: #31a8ff;
+      color: variables.$black;
+    }
+    &.default-tag {
+      background-color: variables.$gray;
+      color: variables.$light;
+    }
   }
 }
