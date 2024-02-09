@@ -943,44 +943,6 @@ h5 {
   }
 }
 
-.carousel {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  max-width: 1140px;
-  padding: 0 30px;
-  align-self: center;
-  width: 100%;
-}
-@media (max-width: 1224px) {
-  .carousel {
-    max-width: 900px;
-  }
-}
-.carousel .carousel-container {
-  display: flex;
-  gap: 25px;
-}
-@media (max-width: 1024px) {
-  .carousel .carousel-container {
-    width: 72%;
-  }
-}
-.carousel button {
-  display: flex;
-  align-items: center;
-  border: none;
-  background-color: unset;
-}
-.carousel button.arrow-previous-project {
-  justify-content: flex-start;
-  left: -5%;
-}
-.carousel button.arrow-next-project {
-  justify-content: flex-end;
-  left: 5%;
-}
-
 .stack-tags {
   display: flex;
   flex-wrap: wrap;
@@ -1091,7 +1053,7 @@ h5 {
   color: #ffffff;
   position: absolute;
   bottom: 5%;
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
   padding: 10px 20px 10px 10px;
   width: auto;
