@@ -104,6 +104,45 @@
     "Site": "https://augusto-mattos.github.io/Portfolio-architecte-OC-AM/",
     "Repo": "https://github.com/augusto-mattos/Portfolio-architecte-OC-AM",
     "stack": ["HTML", "CSS", "JavaScript", "API Rest"]
+  },
+  {
+    "id": "oh-my-food",
+    "title": "OhMyFood",
+    "cover": "ohmyfood-miniature.webp",
+    "pictures": ["ohmyfood-1.webp", "ohmyfood-2.webp"],
+    "resume": "Le projet visait à développer un site web \"mobile first\" répertoriant les menus de restaurants gastronomiques.",
+    "description": [
+      "L'objectif principal de ce projet était de réaliser l'intégration du site en accordant une attention particulière à la version \"mobile first\". Le dossier de projet incluait des maquettes pour les versions mobile et desktop, ainsi qu'un prototype sur Figma.",
+      "Les contraintes comprenaient la livraison du site dans trois versions différentes afin de s'assurer de son adaptabilité à divers appareils. L'utilisation de SASS était obligatoire pour optimiser le développement et la maintenance du code."
+    ],
+    "actions": [
+      "Intégration de la version mobile de la page d'accueil, en alignement avec les maquettes fournies",
+      "Développement de versions pour tablette et desktop",
+      "Ajout d'animations pour améliorer l'expérience utilisateur",
+      "Intégration du code d'une page dédiée à la présentation des restaurants, conformément aux spécifications du projet"
+    ],
+    "Site": "https://augusto-mattos.github.io/Ohmyfood-AM/",
+    "Repo": "https://github.com/augusto-mattos/Ohmyfood-AM",
+    "stack": ["HTML", "Sass", "Figma"]
+  },
+  {
+    "id": "print-it",
+    "title": "Print-it !",
+    "cover": "print-it-miniature.webp",
+    "pictures": ["print-it-1.webp", "print-it-2.webp"],
+    "resume": "Le projet visait à dynamiser un site web statique en ajoutant un carrousel interactif.",
+    "description": [
+      "L'objectif du projet était de rendre une bannière composée d’un carrousel d’images fonctionnel, avec la possibilité de passer en boucle de manière fluide entre les images.",
+      "Pour cela, après une analyse du code HTML et CSS du site, les éléments nécessaires à l’implémentation du site ont été ajoutés. Des flèches de navigation ont été ajoutées pour permettre aux utilisateurs de passer d'une image à l'autre. Des event listeners ont été mis en place pour détecter les clics sur les flèches et des bullet points ont été ajoutés pour indiquer les différentes diapositives du carrousel."
+    ],
+    "actions": [
+      "Intégration des éléments de navigation pour permettre le passage entre les images du carrousel",
+      "Mise en place d'event listeners pour détecter les clics sur les flèches et les bullets points",
+      "Correction des bugs pour assurer le bon fonctionnement du carrousel, notamment en le rendant capable de tourner en boucle indéfiniment"
+    ],
+    "Site": "https://augusto-mattos.github.io/Print-it-JS-AM/",
+    "Repo": "https://github.com/augusto-mattos/Print-it-JS-AM/",
+    "stack": ["JavaScript", "HTML", "CSS"]
   }
 ]
  
