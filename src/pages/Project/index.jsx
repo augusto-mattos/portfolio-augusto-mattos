@@ -6,7 +6,7 @@ import data from "../../data/projects.json";
 import ProjectHero from "../../components/_projectHero";
 import ProjectLinks from "../../components/_projectLinks";
 import ProjectActions from "../../components/_projectActions";
-import ProjectsCarousel from "../../components/_projectsCarousel";
+import Slider from "../../components/_slider";
 import ProjectTags from "../../components/_projectTags";
 
 function Project() {
@@ -57,7 +57,7 @@ function Project() {
       <hr />
       <div className="carousel-project-page">
         <h4>D'autres projets</h4>
-        <ProjectsCarousel />
+        <Slider />
       </div>
     </section>
   );

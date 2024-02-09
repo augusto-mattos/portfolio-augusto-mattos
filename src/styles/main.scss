@@ -18,10 +18,10 @@
 @use "./components/projectsList";
 @use "./components/projectsCarousel";
 @use "./components/projectTags";
+@use "./components/slider";
 
 body {
   @include mixins.desktop-flex-column-aligned-center();
-  flex-direction: column;
   font-family: "Montserrat";
   margin: 0;
   color: variables.$black;
