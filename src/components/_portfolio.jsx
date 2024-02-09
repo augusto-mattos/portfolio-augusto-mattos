@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ProjectsCarousel from "./_projectsCarousel";
 import ProjectsList from "./_projectsList";
+import Slider from "./_slider";
 
 function Portfolio() {
   const [displayAllProjects, setDisplayAllProjects] = useState(false);
@@ -18,7 +18,7 @@ function Portfolio() {
       <button onClick={toggleDisplayProjects} className="btn-plus">
         {textButton}
       </button>
-      {displayAllProjects ? <ProjectsList /> : <ProjectsCarousel />}
+      {displayAllProjects ? <ProjectsList /> : <Slider />}
     </section>
   );
 }
