@@ -1,0 +1,41 @@
+@use "../variables";
+
+.project-card {
+  position: relative;
+  width: 310px;
+  height: 310px;
+  @media (max-width: 1224px) {
+    width: 250px;
+    height: 250px;
+  }
+  @media (max-width: 1224px) {
+    width: 250px;
+    height: 250px;
+  }
+  span {
+    background-color: variables.$black;
+    color: variables.$light;
+    position: absolute;
+    bottom: 5%;
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px 20px 10px 10px;
+    width: auto;
+    max-width: 60%;
+  }
+  .card-overlay {
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  img {
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
