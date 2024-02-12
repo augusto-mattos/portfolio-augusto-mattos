@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import translationIcon from "../assets/icons/translation.png";
 import emailIcon from "../assets/icons/fi-rr-envelope-black.png";
 import Hamburger from "./_navbarHamburger";
@@ -37,6 +38,8 @@ function Navbar() {
 
   const email = "mattos.aug@gmail.com";
 
+  const { t } = useTranslation();
+
   return (
     <>
       <header className={`header ${hamburgerOpen ? "hamburger-is-open" : ""}`}>
@@ -50,16 +53,16 @@ function Navbar() {
           </div>
           <nav className={`navbar-links ${hamburgerOpen ? "column-layout" : ""}`}>
             <Link to={"/#about-me"} onClick={() => handleLinkClick("about-me")}>
-              About me
+               {t("about")}
             </Link>
             <Link to={"/#portfolio"} onClick={() => handleLinkClick("portfolio")}>
-              Portfolio
+              {t("portfolio")}
             </Link>
             <Link to={"/#stack"} onClick={() => handleLinkClick("stack")}>
-              Compétences techniques
+              {t("stack")}
             </Link>
             <Link to={"/#contact"} onClick={() => handleLinkClick("contact")}>
-              Contact
+              {t("contact")}
             </Link>
             <button onClick={openModal}>
               <img

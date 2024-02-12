@@ -1,7 +1,10 @@
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import Error404 from "../Error404";
-import data from "../../data/projects.json";
+//import data from "../../data/projects.json";
+import { useTranslation } from "react-i18next";
+import frProjects from "../../locales/fr/fr-projects.json";
+import ptProjects from "../../locales/pt/pt-projects.json";
 
 import ProjectHero from "../../components/_projectHero";
 import ProjectLinks from "../../components/_projectLinks";
@@ -12,7 +15,16 @@ import ProjectTags from "../../components/_projectTags";
 function Project() {
   const location = useLocation();
   const urlProjetId = location.pathname.split("/")[2];
-  const projetId = data.find((item) => item.id === urlProjetId);
+  //const projetId = data.find((item) => item.id === urlProjetId);
+  
+  const { t, i18n } = useTranslation();
+  
+  function getProjectData(language, projectId) {
+    const projectsData = language === 'fr' ? frProjects : ptProjects;
+    return projectsData.find(item => item.id === projectId);
+  }
+
+  const projetId = getProjectData(i18n.language, urlProjetId);
 
   const scrollToRef = useRef(null);
   
@@ -40,7 +52,7 @@ function Project() {
   return (
     <section className="project-page" ref={scrollToRef}>
       <ProjectHero
-        title={projectName}
+        title={t(projectName)}
         img={projectImgHero}
         intro={projectDescription[0]}
         description={projectDescription[1]}
