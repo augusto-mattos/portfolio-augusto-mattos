@@ -18,7 +18,7 @@
     ],
     "Site": "https://kasa-lake.vercel.app/",
     "Repo": "https://github.com/augusto-mattos/kasa",
-    "stack": ["Sass", "React", "React Router"]
+    "stack": ["Sass", "React", "React Router", "Figma"]
   },
   {
     "id": "724-events",
@@ -103,7 +103,7 @@
     ],
     "Site": "https://augusto-mattos.github.io/Portfolio-architecte-OC-AM/",
     "Repo": "https://github.com/augusto-mattos/Portfolio-architecte-OC-AM",
-    "stack": ["HTML", "CSS", "JavaScript", "API Rest"]
+    "stack": ["HTML", "CSS", "JavaScript", "API Rest", "Figma"]
   },
   {
     "id": "oh-my-food",
@@ -143,6 +143,43 @@
     "Site": "https://augusto-mattos.github.io/Print-it-JS-AM/",
     "Repo": "https://github.com/augusto-mattos/Print-it-JS-AM/",
     "stack": ["JavaScript", "HTML", "CSS"]
+  },
+  {
+    "id": "booki",
+    "title": "Booki",
+    "cover": "booki-miniature.webp",
+    "pictures": ["booki-1.webp", "booki-2.webp"],
+    "resume": "Pour ce projet, l’objectif était de développer un site Internet permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+    "description": [
+      "L'objectif principal du projet Booki était d'intégrer l'interface du site web en utilisant du code HTML et CSS. Booki est une agence de voyage en ligne qui permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+      "Des maquettes du site dans différentes versions (desktop, tablette et mobile) ont été fournies via Figma. Le site devait respecter certaines contraintes techniques, notamment en ce qui concerne le comportement des fonctions de recherche, les liens et les cartes d'hébergement et d'activités."
+    ],
+    "actions": [
+      "Découpage des maquettes Figma pour identifier les éléments à intégrer",
+      "Intégration des composants en HTML et CSS",
+      "Ajout d’un formulaire et des filtres de recherche"
+    ],
+    "Site": "https://augusto-mattos.github.io/booki/",
+    "Repo": "https://github.com/augusto-mattos/booki",
+    "stack": ["HTML", "CSS", "Figma"]
+  },{
+    "id": "studion",
+    "title": "StudiOn",
+    "cover": "studion-miniature.webp",
+    "pictures": ["studion-1.webp", "studion-2.webp"],
+    "resume": "Celui-ci est mon tout premier projet, développé dans le cadre de ma formation chez Imagine School. L'objectif principal était de développer un site web pour une agence événementielle nommée StudiOn.",
+    "description": [
+      "Le projet StudiOn impliquait l'intégration des différentes pages du site de l'agence événementielle en utilisant HTML, CSS et JavaScript. Les maquettes du site ont été fournies au format PSD.",
+      "L'accent a été mis sur l'intégration fidèle de l'interface du site web, en garantissant une navigation fluide entre les pages et en respectant les maquettes fournies."
+    ],
+    "actions": [
+      "Découpage des maquettes pour identifier les éléments à intégrer",
+      "Intégration des composants en HTML et CSS",
+      "Création d'une barre de navigation dynamique en utilisant JavaScript"
+    ],
+    "Site": "https://studion-reprise.vercel.app/ ",
+    "Repo": "https://github.com/augusto-mattos/studion-reprise",
+    "stack": ["HTML", "CSS", "Photoshop", "JavaScript"]
   }
 ]
  
