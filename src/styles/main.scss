@@ -14,10 +14,10 @@
 @use "./components/langSelectorModal";
 @use "./components/navbarHamburger";
 @use "./components/portfolio";
-@use "./components/projectCard";
 @use "./components/projectsList";
 @use "./components/projectTags";
 @use "./components/slider";
+@use "./components/card";
 
 body {
   @include mixins.desktop-flex-column-aligned-center();

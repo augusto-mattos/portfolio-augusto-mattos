@@ -898,50 +898,6 @@ h5 {
   }
 }
 
-.project-card {
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 20px 0;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-radius: 5px;
-  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.25);
-}
-@media (max-width: 1224px) {
-  .project-card {
-    height: 430px;
-  }
-}
-.project-card a {
-  display: flex;
-  color: #0c0c0c;
-  flex-direction: column;
-  gap: 15px;
-  text-decoration: none;
-}
-.project-card a hr {
-  width: 100%;
-  margin: 0;
-  border: 1px solid #f1f1f1;
-}
-.project-card a h5, .project-card a p {
-  padding: 0 20px;
-}
-.project-card a p {
-  color: #5f5f5f;
-}
-.project-card .project-cover {
-  display: flex;
-  object-fit: contain;
-  width: 100%;
-}
-
-.gallery .project-card {
-  width: unset;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -960,6 +916,9 @@ h5 {
     gap: 30px;
     margin: 30px 42px 0 42px;
   }
+}
+.gallery .project-card {
+  width: 100%;
 }
 
 .stack-tags {
@@ -1020,6 +979,7 @@ h5 {
   padding: 0 30px;
   align-self: center;
   width: 100%;
+  padding-top: 30px;
 }
 @media (max-width: 1224px) {
   .slider-container {
@@ -1064,10 +1024,25 @@ h5 {
     padding-bottom: 0;
   }
 }
-.slider-container .slider .project-slide {
+
+.project-card {
   position: relative;
+  width: 310px;
+  height: 310px;
 }
-.slider-container .slider .project-slide span {
+@media (max-width: 1224px) {
+  .project-card {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 1224px) {
+  .project-card {
+    width: 250px;
+    height: 250px;
+  }
+}
+.project-card span {
   background-color: #0c0c0c;
   color: #ffffff;
   position: absolute;
@@ -1078,7 +1053,7 @@ h5 {
   width: auto;
   max-width: 60%;
 }
-.slider-container .slider .project-slide .slide-overlay {
+.project-card .card-overlay {
   border-radius: 5px;
   position: absolute;
   top: 0;
@@ -1087,17 +1062,11 @@ h5 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.slider-container .slider .project-slide img {
+.project-card img {
   border-radius: 5px;
   object-fit: cover;
-  width: 310px;
-  height: 310px;
-}
-@media (max-width: 768px) {
-  .slider-container .slider .project-slide img {
-    width: 250px;
-    height: 250px;
-  }
+  width: 100%;
+  height: 100%;
 }
 
 body {

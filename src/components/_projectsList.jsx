@@ -1,20 +1,20 @@
 import React from "react";
 import projects from "../data/projects";
-import ProjectCard from "./_projectCard";
+import Card from "./_card";
 
 function ProjectsList() {
   return (
     <>
       <div className="gallery">
         {projects.map((project) => (
-          <ProjectCard
+          <Card
             key={project.id}
             id={project.id}
             project={project}
           />
         ))}
       </div>
-    </>
+    </> 
   );
 }
 

@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
 import projects from "../data/projects.json";
 import arrowLeft from "../assets/icons/arrow-left.png";
 import arrowRight from "../assets/icons/arrow-right.png";
+import Card from "./_card";
 
 function Slider() {
   const sliderRef = useRef(null);
@@ -58,19 +58,11 @@ function Slider() {
       </button>
       <div className="slider" ref={sliderRef}>
         {projects.map((project) => (
-          <Link to={`/projet/${project.id}`} key={project.id}>
-            <div
-              id={project.id}
-              className="project-slide"
-            >
-              <span>{project.title}</span>
-              <div className="slide-overlay" />
-              <img
-                src={process.env.PUBLIC_URL + "/images/" + project.cover}
-                alt={`slide du projet ${project.title}`}
-              />
-            </div>
-          </Link>
+          <Card 
+            key={project.id} 
+            id={project.id} 
+            project={project} 
+          />
         ))}
       </div>
       <button className="arrow-next-project" onClick={swipeLeft}>
