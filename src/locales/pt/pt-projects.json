@@ -65,19 +65,19 @@
   },
   {
     "id": "nina-carducci",
-    "title": "Optimisation du site de Nina Carducci",
+    "title": "Otimização do site de Nina Carducci",
     "cover": "nina-carducci-miniature.webp",
     "pictures": ["nina-carducci-1.webp", "nina-carducci-2.webp"],
     "resume": "Ce projet consiste à optimiser la performance d’un site web en tenant compte du référencement local, du SEO et de l’accessibilité.",
     "description": [
-      "Ce projet d' optimisation du site web de Nina Carducci, s’est concentré sur plusieurs aspects, la performance, le référencement local, le SEO et l'accessibilité. Suite à un état des lieux, les actions se sont concentrées sur l'optimisation des images, l'amélioration du code et de la structure, l'intégration du référencement local, ainsi que l'ajout de balises meta pour les réseaux sociaux afin de renforcer la présence en ligne. Des ajustements spécifiques ont également été apportés pour renforcer l'accessibilité du site.",
-      " Le projet a été conclu avec la remise d'un rapport d'optimisation détaillé, incluant des analyses avant/après basées sur les audits Lighthouse pour la performance et le SEO, Google Rich Snippet pour le référencement local et Wave pour l'accessibilité."
+      "Neste projeto de otimização do site da Nina Carducci, concentrei meus esforços em diversos aspectos, como performance, referenciamento local, SEO e acessibilidade. Após analisar a estrutura do site, minhas ações incluíram otimização de imagens, melhoria da estrutura do código, adição de referenciamento local e inclusão de tags meta para melhorar a presença nas redes sociais. Além disso, fiz ajustes específicos para melhorar a acessibilidade do site.",
+      "O projeto foi finalizado com a entrega de um relatório detalhado de otimização, que incluiu análises pré e pós-otimização, com base em métricas como LightHouse para performance e SEO, Google Rich Snippet para referenciamento local e Wave para questões de acessibilidade."
     ],
     "actions": [
-      "Optimisation globale du site pour améliorer les performances et le référencement SEO",
-      "Mise en œuvre du référencement local en utilisant Schema.org",
-      "Ajout des balises meta pour les réseaux sociaux afin d'optimiser la présence en ligne",
-      "Ajustements pour renforcer l'accessibilité du site"
+      "Otimização do site para melhorar a performance e SEO",
+      "Implementação de referenciamento local usando Schema.org",
+      "Adição de tags meta para melhorar o compartilhamento nas redes sociais",
+      "Ajustes para aumentar a acessibilidade do site"
     ],
     "Site": "https://augusto-mattos.github.io/ninacarducci-optmisation/",
     "Repo": "https://github.com/augusto-mattos/ninacarducci-optmisation",
