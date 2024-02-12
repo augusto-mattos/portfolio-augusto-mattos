@@ -216,17 +216,22 @@ h5 {
     gap: 25px;
   }
 }
-.project-page .project-hero .project-description {
+.project-page .project-hero .hero-content {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1024px) {
+  .project-page .project-hero .hero-content {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+}
+.project-page .project-hero .hero-content .project-description {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-@media (max-width: 1024px) {
-  .project-page .project-hero .project-description {
-    flex-direction: column-reverse;
-  }
-}
-.project-page .project-hero .project-description p {
+.project-page .project-hero .hero-content .project-description p {
   font-size: 18px;
   line-height: 26px;
 }
