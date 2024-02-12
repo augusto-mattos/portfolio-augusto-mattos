@@ -20,16 +20,21 @@
       margin-top: 130px;
       gap: 25px;
     }
-    .project-description {
+    .hero-content {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      flex-direction: column;      
       @media (max-width: 1024px) {
         flex-direction: column-reverse;
+        gap: 25px;
       }
-      p {
-        font-size: 18px;
-        line-height: 26px;
+      .project-description {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        p {
+          font-size: 18px;
+          line-height: 26px;
+        }
       }
     }
     .hero-img {
