@@ -352,6 +352,9 @@ h5 {
   position: absolute;
   padding: 0;
 }
+.header.hamburger-is-open .burger {
+  background-color: #f1f1f1;
+}
 .header .navbar {
   display: flex;
   justify-content: space-between;
@@ -370,8 +373,11 @@ h5 {
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 30px;
-  background: #f1f1f1;
+  padding: 15px 30px;
+  background: #0c0c0c;
+  height: 100vh;
+  gap: 50px;
+  justify-content: flex-start;
 }
 .header .navbar .mail-navbar {
   display: flex;
@@ -399,6 +405,7 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 75px;
   }
 }
 .header .navbar .navbar-links button, .header .navbar .navbar-links a {
@@ -408,11 +415,18 @@ h5 {
 }
 @media (max-width: 1024px) {
   .header .navbar .navbar-links button, .header .navbar .navbar-links a {
-    font-size: 18px;
+    color: #f1f1f1;
+    font-size: 22px;
   }
 }
 .header .navbar .navbar-links .translation-icon {
   height: 30px;
+}
+@media (max-width: 1024px) {
+  .header .navbar .navbar-links .translation-icon {
+    filter: invert(100%);
+    height: 45px;
+  }
 }
 .header .navbar a {
   text-decoration: none;
