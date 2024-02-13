@@ -9,7 +9,7 @@ import githubLogo from "../assets/logos/github-mark-white.png";
 function Footer() {
   const {t} = useTranslation();
   const email = "mattos.aug@gmail.com";
-  const phone = "+33 7 87 20 41 18";
+  const phone = "+33787204118";
   const linkedInProfile = "https://www.linkedin.com/in/augusto-mattos/";
   const githubProfile = "https://github.com/augusto-mattos";
 
@@ -32,12 +32,12 @@ function Footer() {
             src={phoneIcon}
             alt="phone icon"
           />
-          <NavLink to={`tel:${phone}`}>{phone}</NavLink>
+          <NavLink to={`tel:${phone}`}>+33 7 87 20 41 18</NavLink>
         </div>
         <div className="linkedin-footer">
           <img
             src={linkedinLogo}
-            alt="likedin logo"
+            alt="linkedin logo"
           />
           <NavLink
             to={linkedInProfile}
