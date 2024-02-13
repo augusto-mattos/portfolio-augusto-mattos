@@ -52,16 +52,16 @@ function Navbar() {
             <a href={`mailto:${email}`}>{email}</a>
           </div>
           <nav className={`navbar-links ${hamburgerOpen ? "column-layout" : ""}`}>
-            <Link to={"/#about-me"} onClick={() => handleLinkClick("about-me")}>
+            <Link to={"/"} onClick={() => handleLinkClick("about-me")}>
                {t("about")}
             </Link>
-            <Link to={"/#portfolio"} onClick={() => handleLinkClick("portfolio")}>
+            <Link to={"/"} onClick={() => handleLinkClick("portfolio")}>
               {t("portfolio")}
             </Link>
-            <Link to={"/#stack"} onClick={() => handleLinkClick("stack")}>
+            <Link to={"/"} onClick={() => handleLinkClick("stack")}>
               {t("stack")}
             </Link>
-            <Link to={"/#contact"} onClick={() => handleLinkClick("contact")}>
+            <Link to={"/"} onClick={() => handleLinkClick("contact")}>
               {t("contact")}
             </Link>
             <button onClick={openModal}>

@@ -65,12 +65,12 @@
   },
   {
     "id": "nina-carducci",
-    "title": "Otimização do site de Nina Carducci",
+    "title": "Nina Carducci",
     "cover": "nina-carducci-miniature.webp",
     "pictures": ["nina-carducci-1.webp", "nina-carducci-2.webp"],
     "resume": "Ce projet consiste à optimiser la performance d’un site web en tenant compte du référencement local, du SEO et de l’accessibilité.",
     "description": [
-      "Neste projeto de otimização do site da Nina Carducci, concentrei meus esforços em diversos aspectos, como performance, referenciamento local, SEO e acessibilidade. Após analisar a estrutura do site, minhas ações incluíram otimização de imagens, melhoria da estrutura do código, adição de referenciamento local e inclusão de tags meta para melhorar a presença nas redes sociais. Além disso, fiz ajustes específicos para melhorar a acessibilidade do site.",
+      "Este projeto consistiu na otimização do site da Nina Carducci. Nele concentrei meus esforços em diversos aspectos, como performance, referenciamento local, SEO e acessibilidade. Após analisar a estrutura do site, minhas ações incluíram otimização de imagens, melhoria da estrutura do código, adição de referenciamento local e inclusão de tags meta para melhorar a presença nas redes sociais. Além disso, fiz ajustes específicos para melhorar a acessibilidade do site.",
       "O projeto foi finalizado com a entrega de um relatório detalhado de otimização, que incluiu análises pré e pós-otimização, com base em métricas como LightHouse para performance e SEO, Google Rich Snippet para referenciamento local e Wave para questões de acessibilidade."
     ],
     "actions": [
