@@ -16,6 +16,7 @@ function Card(props) {
         <img
           src={process.env.PUBLIC_URL + "/images/" + cover}
           alt={`slide du projet ${title}`}
+          loading="lazy"
         />
       </div>
     </Link>
