@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import Error404 from "../Error404";
-//import data from "../../data/projects.json";
 import { useTranslation } from "react-i18next";
 import frProjects from "../../locales/fr/fr-projects.json";
 import ptProjects from "../../locales/pt/pt-projects.json";
@@ -15,7 +14,6 @@ import ProjectTags from "../../components/_projectTags";
 function Project() {
   const location = useLocation();
   const urlProjetId = location.pathname.split("/")[2];
-  //const projetId = data.find((item) => item.id === urlProjetId);
   
   const { t, i18n } = useTranslation();
   
