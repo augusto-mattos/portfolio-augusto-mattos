@@ -68,7 +68,7 @@ function Project() {
       <ProjectTags stack={stackList} />
       <hr />
       <div className="carousel-project-page">
-        <h4>D'autres projets</h4>
+        <h4>{t("other-projects-title")}</h4>
         <Slider />
       </div>
     </section>
