@@ -434,6 +434,7 @@ h5 {
 @media (max-width: 1024px) {
   .header .navbar .navbar-links .translation-icon {
     height: 45px;
+    filter: unset;
   }
 }
 .header .navbar a {
