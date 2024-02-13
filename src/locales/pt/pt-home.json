@@ -7,5 +7,8 @@
     "about-me-copy": [
         "Com uma sólida experiência no mundo da educação, percorri um longo caminho desde as aulas de FLE (francês língua estrangeira) até a coordenação do desenvolvimento de um LMS. Ao longo dessa jornada, mergulhei na integração de layouts em HTML, CSS e JS e também desenvolvi habilidades na gestão de projetos. Minha trajetória sempre foi uma fusão entre educação e tecnologia.",
         "Após essas experiências enriquecedoras, decidi embarcar em uma nova aventura: minha reconversão profissional em desenvolvimento web. Estou em busca de combinar todas as minhas habilidades para criar uma ponte entre minha bagagem educacional e o desenvolvimento front-end."
-      ]
+      ],
+    "portfolio-subtitle": "Veja meus projetos",
+    "portfolio-displayAll-btn": "Ver todos",
+    "portfolio-displayCarousel-btn": "Ver slides"
 }
