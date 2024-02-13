@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import projects from "../data/projects.json";
+import projects from "../locales/fr/fr-projects.json";
 import arrowLeft from "../assets/icons/arrow-left.png";
 import arrowRight from "../assets/icons/arrow-right.png";
 import Card from "./_card";
@@ -42,7 +42,6 @@ function Slider() {
     }
   };
   
-
   const swipeRight = () => {
     sliderRef.current.scrollLeft -= 350;
   };

@@ -1,5 +1,5 @@
 import React from "react";
-import projects from "../data/projects";
+import projects from "../locales/fr/fr-projects.json";
 import Card from "./_card";
 
 function ProjectsList() {

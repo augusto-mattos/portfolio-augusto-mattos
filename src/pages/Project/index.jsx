@@ -52,7 +52,7 @@ function Project() {
   return (
     <section className="project-page" ref={scrollToRef}>
       <ProjectHero
-        title={t(projectName)}
+        title={projectName}
         img={projectImgHero}
         intro={projectDescription[0]}
         description={projectDescription[1]}
