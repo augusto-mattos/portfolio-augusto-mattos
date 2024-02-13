@@ -1,10 +1,17 @@
 import i18n from "i18next";
+
 import frProjects from "../src/locales/fr/fr-projects.json";
 import frModal from "../src/locales/fr/fr-lng-modal.json";
 import frNavbar from "../src/locales/fr/fr-navbar.json";
+import frHome from "../src/locales/fr/fr-home.json";
+import frFooter from "../src/locales/fr/fr-footer.json";
+
 import ptNavbar from "../src/locales/pt/pt-navbar.json";
 import ptProjects from "../src/locales/pt/pt-projects.json";
 import ptModal from "../src/locales/pt/pt-lng-modal.json";
+import ptHome from "../src/locales/pt/pt-home.json";
+import ptFooter from "../src/locales/pt/pt-footer.json";
+
 import { initReactI18next } from "react-i18next";
 
 i18n
@@ -18,6 +25,8 @@ i18n
                     ...frProjects,
                     ...frModal,
                     ...frNavbar,
+                    ...frHome,
+                    ...frFooter,
                   }
             },
             pt:  {
@@ -25,6 +34,8 @@ i18n
                     ...ptProjects,
                     ...ptModal,
                     ...ptNavbar,
+                    ...ptHome,
+                    ...ptFooter,
                   },
             }
         },

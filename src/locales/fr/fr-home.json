@@ -1,0 +1,14 @@
+{
+    "hero-title": "Développeur web",
+    "hero-copy": "Spécialisé en React.js, je développe des expériences web de qualité alliant performance, SEO optimisé et accessibilité.",
+    "btn-scroll-contact": "Contactez-moi !",
+    "btn-cv": "Télechargez mon CV",
+    "about-me-title": "About me",
+    "about-me-copy": [
+        "Avec 13 ans d'expérience dans le monde de l'éducation, j'ai tracé mon parcours depuis les cours de FLE (français langue étrangère) jusqu'à la direction du développement d'un LMS. En chemin, j'ai plongé dans l'intégration de maquettes en HTML, CSS et JS, tout en jonglant avec la gestion de projets. Mon parcours est une fusion constante entre éducation et technologie.",
+        "Après toutes ces expériences enrichissantes, j'ai décidé de me lancer dans une nouvelle aventure, ma reconversion professionnelle en développement web. Je cherche à réunir toutes mes compétences pour tisser un lien entre mon bagage éducatif et la création technologique."
+      ],
+    "portfolio-subtitle": "Consultez mon portfolio",
+    "portfolio-displayAll-btn": "Voir tous",
+    "portfolio-displayCarousel-btn": "Voir carrousel"
+}

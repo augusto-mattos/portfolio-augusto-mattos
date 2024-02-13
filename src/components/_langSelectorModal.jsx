@@ -24,7 +24,7 @@ const LanguageModal = ({ isOpen, closeModal }) => {
             <h2>{t("modal.title")}</h2>
             <div className="options">
                 <button onClick={() => changeLanguage("fr")} className={selectedLanguage === 'fr' ? 'selected' : ''}>Français</button>
-                <button onClick={() => changeLanguage("pt")} className={selectedLanguage === 'pt' ? 'selected' : ''}>Português - em breve!</button>
+                <button onClick={() => changeLanguage("pt")} className={selectedLanguage === 'pt' ? 'selected' : ''}>Português</button>
                 <button onClick={() => changeLanguage("en")} className={selectedLanguage === 'en' ? 'selected' : ''} disabled>English - coming soon!</button>
             </div>
         </div>

@@ -1,11 +1,13 @@
 import React, { useRef } from 'react';
 import { NavLink } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 import emailIcon from "../assets/icons/fi-rr-envelope.png";
 import phoneIcon from "../assets/icons/fi-rr-phone-call.png";
 import linkedinLogo from "../assets/logos/logo-linkedin.png";
 import githubLogo from "../assets/logos/github-mark-white.png";
 
 function Footer() {
+  const {t} = useTranslation();
   const email = "mattos.aug@gmail.com";
   const phone = "+33 7 87 20 41 18";
   const linkedInProfile = "https://www.linkedin.com/in/augusto-mattos/";
@@ -16,8 +18,8 @@ function Footer() {
   return (
     <footer className="footer">
       <div id="contact" ref={contactRef} className="contact-footer">
-        <h3>Contact</h3>
-        <h4>Travaillons ensemble !</h4>
+        <h3>{t("footer-title")}</h3>
+        <h4>{t("footer-subtitle")}</h4>
         <div className="email-footer">
           <img
             src={emailIcon}
@@ -30,7 +32,7 @@ function Footer() {
             src={phoneIcon}
             alt="phone icon"
           />
-          <NavLink to={`tel:${phone}`}>+33 07 87 20 41 18</NavLink>
+          <NavLink to={`tel:${phone}`}>{phone}</NavLink>
         </div>
         <div className="linkedin-footer">
           <img
