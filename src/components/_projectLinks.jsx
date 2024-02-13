@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import linkIcon from "../assets/icons/fi-rr-link.png";
 import githubLogo from "../assets/logos/github-mark.png";
 
 function ProjectLinks(props) {
+  const { t } = useTranslation();
+
   return (
     <div className="project-links">
       <Link
@@ -15,7 +18,7 @@ function ProjectLinks(props) {
           src={linkIcon}
           alt="lien vers le site déployé"
         />
-        Découvrir le site
+        {t("deployed-site-btn")}
       </Link>
       <Link
         to={props.repo}
@@ -27,7 +30,7 @@ function ProjectLinks(props) {
           src={githubLogo}
           alt="lien vers le repository"
         />
-        Découvrir le code
+        {t("repository-btn")}
       </Link>
     </div>
   );

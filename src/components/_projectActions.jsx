@@ -7,7 +7,7 @@ function ProjectActions(props) {
         loading="lazy"
       />
       <div className="actions-list">
-        <h3>Mis en œuvre</h3>
+        <h3>Modus operandi</h3>
         <ul>
           {props.actions.map((action) => (
             <li>{action}</li>

@@ -52,7 +52,7 @@ function Project() {
   return (
     <section className="project-page" ref={scrollToRef}>
       <ProjectHero
-        title={t(projectName)}
+        title={projectName}
         img={projectImgHero}
         intro={projectDescription[0]}
         description={projectDescription[1]}
@@ -68,7 +68,7 @@ function Project() {
       <ProjectTags stack={stackList} />
       <hr />
       <div className="carousel-project-page">
-        <h4>D'autres projets</h4>
+        <h4>{t("other-projects-title")}</h4>
         <Slider />
       </div>
     </section>
