@@ -16,10 +16,16 @@ import ptPageProjet from "../src/locales/pt/pt-page-projet.json";
 
 import { initReactI18next } from "react-i18next";
 
+const userLanguage = navigator.language || navigator.userLanguage;
+const initialLanguage = userLanguage.startsWith("pt") ? "pt" : "fr";
+
 i18n
     .use(initReactI18next)
+    .on('languageChanged', (lng) => {
+        document.documentElement.setAttribute('lang', lng);
+    })
     .init({
-        lng: "fr", 
+        lng: initialLanguage, 
         fallbacklng: "pt",
         resources: {
             fr: {
