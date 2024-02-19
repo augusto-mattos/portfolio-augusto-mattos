@@ -13,7 +13,12 @@ function Navbar() {
 
   useEffect(() => {
     setActiveItem(null);
-  }, [location.pathname]);
+    const section = location.hash.substring(1); 
+    if (section) {
+      scrollToSection(section);
+      setActiveItem(section);
+    }
+  }, [location]);
 
   const toogleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
