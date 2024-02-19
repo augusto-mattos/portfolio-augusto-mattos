@@ -26,7 +26,7 @@ i18n
     })
     .init({
         lng: initialLanguage, 
-        fallbacklng: "pt",
+        fallbacklng: "fr",
         resources: {
             fr: {
                 translation: {
