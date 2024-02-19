@@ -18,11 +18,16 @@ function Project() {
   const { t, i18n } = useTranslation();
   
   function getProjectData(language, projectId) {
-    const projectsData = language === 'fr' ? frProjects : ptProjects;
+    const projectsData = language === "pt" ? ptProjects : frProjects;
     return projectsData.find(item => item.id === projectId);
   }
 
   const projetId = getProjectData(i18n.language, urlProjetId);
+  console.log(urlProjetId)
+
+  useEffect(() => {
+    document.title = `${projectName} - ${"Portfolio - Augusto Mattos"}`;
+  })
 
   const scrollToRef = useRef(null);
   
