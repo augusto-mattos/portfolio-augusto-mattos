@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Error404 from "../Error404";
 import { useTranslation } from "react-i18next";
@@ -14,20 +14,22 @@ import ProjectTags from "../../components/_projectTags";
 function Project() {
   const location = useLocation();
   const urlProjetId = location.pathname.split("/")[2];
-  
+  const [projetId, setProjetId] = useState(null);
   const { t, i18n } = useTranslation();
   
-  function getProjectData(language, projectId) {
-    const projectsData = language === "pt" ? ptProjects : frProjects;
-    return projectsData.find(item => item.id === projectId);
-  }
-
-  const projetId = getProjectData(i18n.language, urlProjetId);
-  console.log(urlProjetId)
-
   useEffect(() => {
-    document.title = `${projectName} - ${"Portfolio - Augusto Mattos"}`;
-  })
+    function getProjectData(language, projectId) {
+      const projectsData = language === "pt" ? ptProjects : frProjects;
+      return projectsData.find(item => item.id === projectId);
+    }
+
+    const projectId = getProjectData(i18n.language, urlProjetId);
+    setProjetId(projectId);
+
+    if (projectId) {
+      document.title = `${projectId.title} - Portfolio - Augusto Mattos`;
+    }
+  }, [urlProjetId, i18n.language]);
 
   const scrollToRef = useRef(null);
   
@@ -36,10 +38,10 @@ function Project() {
         scrollToRef.current.scrollIntoView({ behavior: "smooth" });
       }
     }, [location.pathname]);
-
-  if (!projetId) {
-    return <Error404 />;
-  }
+    
+    if (!projetId) {
+      return <Error404 />;
+    }  
 
   const projectName = projetId.title;
   const projectImgHero =
