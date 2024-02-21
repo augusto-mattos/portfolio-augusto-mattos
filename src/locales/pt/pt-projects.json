@@ -154,7 +154,8 @@
     "Site": "https://augusto-mattos.github.io/booki/",
     "Repo": "https://github.com/augusto-mattos/booki",
     "stack": ["HTML", "CSS", "Figma"]
-  },{
+  },
+  {
     "id": "studion",
     "title": "StudiOn",
     "cover": "studion-miniature.webp",
@@ -168,9 +169,28 @@
       "Integração dos componentes em HTML e CSS",
       "Criação de uma barra de navegação dinâmica usando JavaScript"
     ],
-    "Site": "https://studion-reprise.vercel.app/ ",
+    "Site": "https://studion-reprise.vercel.app/",
     "Repo": "https://github.com/augusto-mattos/studion-reprise",
     "stack": ["HTML", "CSS", "Photoshop", "JavaScript"]
+  },
+  {
+    "id": "magbank",
+    "title": "MagBank",
+    "cover": "magbank-miniature.webp",
+    "pictures": ["magbank-1.webp", "magbank-2.webp"],
+    "description": [
+      "O projeto MaGbank envolveu a integração das diferentes páginas do site usando React, React Router, Sass e JavaScript. O protótipo do site foi fornecido no formato PSD.",
+      "A criação de uma rota privada foi planejada para garantir o acesso seguro ao dashboard quando o aplicativo for conectado ao backend. Foi enfatizada uma integração fiel à interface do site, garantindo uma navegação fluida entre as páginas e respeitando o layout fornecido."
+    ],
+    "actions": [
+      "Desenvolvimento do site com React",
+      "Integração dos componentes",
+      "Uso de Sass para o estilo",
+      "Criação de uma rota privada para garantir o acesso ao dashboard somente após a conexão do usuário"
+    ],
+    "Site": "https://magbank-ten.vercel.app/",
+    "Repo": "https://github.com/augusto-mattos/magbank",
+    "stack": ["React", "React Router", "Sass", "JavaScript"]
   }
 ]
  
