@@ -4,6 +4,9 @@ function Error404() {
 
   return (
     <div className="error-container">
+      <div class="loader">
+        <div class="loader-circle"></div>
+      </div>
       <div className="error-message">
         <p>404</p>
         <span>Not found</span>
