@@ -5,7 +5,8 @@
   @include mixins.desktop-flex-aligned-center();
   background-color: variables.$black;
   color: variables.$white;
-  height: 100vh;
+  position:fixed;
+  height: 100%;
   width: 100%;
   justify-content: center;
   z-index: 1000;
