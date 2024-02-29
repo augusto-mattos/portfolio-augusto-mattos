@@ -191,6 +191,25 @@
     "Site": "https://magbank-ten.vercel.app/",
     "Repo": "https://github.com/augusto-mattos/magbank",
     "stack": ["React", "React Router", "Sass", "JavaScript"]
+  },
+  {
+    "id": "imagiflix",
+    "title": "Imagiflix",
+    "cover": "imagiflix-miniature.webp",
+    "pictures": ["imagiflix-1.webp", "imagiflix-2.webp"],
+    "description": [
+      "Le projet Imagiflix s’est concentré sur la mise en place de l'interface utilisateur et l'intégration avec l'API de The Movie DB. Une application web a été développée en utilisant React et en appliquant les principes de conception de Tailwind CSS.",
+      "L'intégration a inclus des appels à l'API de The Movie DB pour obtenir les données sur les films et les séries, permettant ainsi aux utilisateurs d'accéder à une vaste bibliothèque de contenu. L'intégration de react-slick a été utilisée pour créer des carrousels interactifs et attrayants, offrant une expérience de navigation fluide et visuellement agréable."
+    ],
+    "actions": [
+      "Développement de l'application web Imagiflix en utilisant React",
+      "Intégration de Tailwind CSS pour la conception et le style",
+      "Utilisation de l'API de The Movie DB pour obtenir les données sur les films et les séries",
+      "Implémentation de React Slick pour créer des carrousels interactifs"
+    ],
+    "Site": "https://imagiflix.vercel.app/",
+    "Repo": "https://github.com/augusto-mattos/imagiflix",
+    "stack": ["React", "API Rest", "Tailwind CSS", "CSS", "JavaScript"]
   }
 ]
  

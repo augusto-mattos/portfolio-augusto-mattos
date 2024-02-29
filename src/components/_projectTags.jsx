@@ -36,6 +36,9 @@ function ProjectTags(props) {
         case "Photoshop":
           classes[tag] = "ps-tag";
           break;
+        case "Tailwind CSS":
+          classes[tag] = "tailwind-tag";
+          break;
         default:
           classes[tag] = "default-tag";
       }
