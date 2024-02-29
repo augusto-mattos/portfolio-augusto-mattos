@@ -1,7 +1,14 @@
+import ProjectTags from "./_projectTags";
+
 function ProjectHero(props) {
+  const stackList = localStorage.getItem("stack");
+
   return (
     <div className="project-hero">
-      <h1>{props.title}</h1>
+      <div className="projet-hero-title">
+        <h1>{props.title}</h1>
+        <ProjectTags stack={stackList} />
+      </div>
       <div className="hero-content">
         <div className="project-description">
           <p className="intro">{props.intro}</p>
