@@ -15,6 +15,8 @@ function Footer() {
 
   const contactRef = useRef(null);
 
+  const today = new Date();
+
   return (
     <footer className="footer">
       <div id="contact" ref={contactRef} className="contact-footer">
@@ -50,7 +52,7 @@ function Footer() {
       </div>
       <hr />
       <div className="info-footer">
-        <p>Designed and developed by Augusto Mattos © 2024</p>
+        <p>Designed and developed by Augusto Mattos © {today.getFullYear()}</p>
         <div className="github-footer">
         <img
           src={githubLogo}
