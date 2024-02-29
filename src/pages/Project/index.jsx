@@ -9,7 +9,7 @@ import ProjectHero from "../../components/_projectHero";
 import ProjectLinks from "../../components/_projectLinks";
 import ProjectActions from "../../components/_projectActions";
 import Slider from "../../components/_slider";
-import ProjectTags from "../../components/_projectTags";
+//import ProjectTags from "../../components/_projectTags";
 
 function Project() {
   const location = useLocation();
@@ -53,6 +53,7 @@ function Project() {
   const projectURL = projetId.Site;
   const projectRepo = projetId.Repo;
   const stackList = projetId.stack.join(", ");
+  localStorage.setItem("stack", stackList);
 
   return (
     <section className="project-page" ref={scrollToRef}>
@@ -70,7 +71,6 @@ function Project() {
         img={projectImgActions}
         actions={projectActions}
       />
-      <ProjectTags stack={stackList} />
       <hr />
       <div className="carousel-project-page">
         <h4>{t("other-projects-title")}</h4>
