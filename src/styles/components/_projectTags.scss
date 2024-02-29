@@ -44,6 +44,10 @@
       background-color: #31a8ff;
       color: variables.$black;
     }
+    &.tailwind-tag {
+      background-color: #0ea5e9;
+      color: variables.$white;
+    }
     &.default-tag {
       background-color: variables.$gray;
       color: variables.$light;

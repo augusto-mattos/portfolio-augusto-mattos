@@ -7,6 +7,7 @@ import reduxLogo from "../assets/logos/redux_logo.png";
 import figmaLogo from "../assets/logos/figma_logo.png";
 import psLogo from "../assets/logos/logo_photoshop.png";
 import githubLogo from "../assets/logos/github-mark.png";
+import tailwindLogo from "../assets/logos/tailwind.png";
 
 function Competences() {
   return (
@@ -35,13 +36,6 @@ function Competences() {
         </div>
         <div className="stack-logo">
         <img
-          src={sassLogo}
-          alt="Sass"
-        />
-          <p>Sass</p>
-        </div>
-        <div className="stack-logo">
-        <img
           src={reactLogo}
           alt="React"
         />
@@ -53,6 +47,20 @@ function Competences() {
           alt="Redux"
         />
         <p>Redux</p>  
+        </div>
+        <div className="stack-logo">
+        <img
+          src={sassLogo}
+          alt="Sass"
+        />
+          <p>Sass</p>
+        </div>
+        <div className="stack-logo">
+        <img
+          src={tailwindLogo}
+          alt="Tailwind"
+        />
+        <p>Tailwind CSS</p>
         </div>
         <div className="stack-logo">
         <img
