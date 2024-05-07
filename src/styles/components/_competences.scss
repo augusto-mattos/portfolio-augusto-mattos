@@ -10,7 +10,7 @@
     @include mixins.desktop-max-width();
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 35px;
     justify-content: center;
     padding: 40px 0;
     @media (max-width: 1224px) {

@@ -8,80 +8,91 @@ import figmaLogo from "../assets/logos/figma_logo.png";
 import psLogo from "../assets/logos/logo_photoshop.png";
 import githubLogo from "../assets/logos/github-mark.png";
 import tailwindLogo from "../assets/logos/tailwind.png";
+import firebaseLogo from "../assets/logos/firebase_logo.png";
 
 function Competences() {
   return (
-    <section id="stack" className="competences-container">
+    <section
+      id="stack"
+      className="competences-container"
+    >
       <div className="competences">
         <div className="stack-logo">
-        <img
-          src={htmlLogo}
-          alt="HTML"
-        />
-        <p>HTML</p>
+          <img
+            src={htmlLogo}
+            alt="HTML"
+          />
+          <p>HTML</p>
         </div>
         <div className="stack-logo">
-        <img
-          src={cssLogo}
-          alt="CSS"
-        />
-        <p>CSS</p>        
+          <img
+            src={cssLogo}
+            alt="CSS"
+          />
+          <p>CSS</p>
         </div>
         <div className="stack-logo">
-        <img
-          src={jsLogo}
-          alt="JavaScript"
-        />
-        <p>JavaScript</p>
+          <img
+            src={jsLogo}
+            alt="JavaScript"
+          />
+          <p>JavaScript</p>
         </div>
         <div className="stack-logo">
-        <img
-          src={reactLogo}
-          alt="React"
-        />
-        <p>React</p>
+          <img
+            src={reactLogo}
+            alt="React"
+          />
+          <p>React</p>
         </div>
         <div className="stack-logo">
-        <img
-          src={reduxLogo}
-          alt="Redux"
-        />
-        <p>Redux</p>  
+          <img
+            src={reduxLogo}
+            alt="Redux"
+          />
+          <p>Redux</p>
         </div>
         <div className="stack-logo">
-        <img
-          src={sassLogo}
-          alt="Sass"
-        />
+          <img
+            src={sassLogo}
+            alt="Sass"
+          />
           <p>Sass</p>
         </div>
         <div className="stack-logo">
-        <img
-          src={tailwindLogo}
-          alt="Tailwind"
-        />
-        <p>Tailwind CSS</p>
+          <img
+            src={tailwindLogo}
+            alt="Tailwind"
+          />
+          <p>Tailwind CSS</p>
         </div>
         <div className="stack-logo">
-        <img
-          src={figmaLogo}
-          alt="Figma"
-        />
-        <p>Figma</p>
+          <img
+            src={firebaseLogo}
+            alt="Firebase"
+          />
+          <p>Firebase</p>
         </div>
         <div className="stack-logo">
-        <img
-          src={psLogo}
-          alt="Photoshop"
-        />
-        <p>Photoshop</p>
+          <img
+            src={figmaLogo}
+            alt="Figma"
+          />
+          <p>Figma</p>
         </div>
         <div className="stack-logo">
-        <img
-          src={githubLogo}
-          alt="GitHub"
-        />
-        <p>GitHub</p>
+          <img
+            src={psLogo}
+            alt="Photoshop"
+          />
+          <p>Photoshop</p>
+        </div>
+        <div className="stack-logo">
+          <img
+            src={githubLogo}
+            alt="GitHub"
+          />
+          <p>GitHub</p>
         </div>
       </div>
     </section>
