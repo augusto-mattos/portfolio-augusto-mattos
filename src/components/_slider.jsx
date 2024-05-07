@@ -35,13 +35,16 @@ function Slider() {
   };
 
   const swipeLeft = () => {
-    if (sliderRef.current.scrollLeft + sliderRef.current.clientWidth === sliderRef.current.scrollWidth) {
+    if (
+      sliderRef.current.scrollLeft + sliderRef.current.clientWidth ===
+      sliderRef.current.scrollWidth
+    ) {
       sliderRef.current.scrollLeft = 0;
     } else {
       sliderRef.current.scrollLeft += 350;
     }
   };
-  
+
   const swipeRight = () => {
     sliderRef.current.scrollLeft -= 350;
   };
@@ -52,20 +55,37 @@ function Slider() {
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
     >
-      <button className="arrow-previous-project" onClick={swipeRight}>
-        <img src={arrowLeft} alt="previous project" />
+      <button
+        className="arrow-previous-project"
+        onClick={swipeRight}
+      >
+        <img
+          src={arrowLeft}
+          alt="previous project"
+        />
       </button>
-      <div className="slider" ref={sliderRef}>
-        {projects.map((project) => (
-          <Card 
-            key={project.id} 
-            id={project.id} 
-            project={project} 
-          />
-        ))}
+      <div
+        className="slider"
+        ref={sliderRef}
+      >
+        {projects
+          .sort(() => Math.random() - 0.5)
+          .map((project) => (
+            <Card
+              key={project.id}
+              id={project.id}
+              project={project}
+            />
+          ))}
       </div>
-      <button className="arrow-next-project" onClick={swipeLeft}>
-        <img src={arrowRight} alt="next project" />
+      <button
+        className="arrow-next-project"
+        onClick={swipeLeft}
+      >
+        <img
+          src={arrowRight}
+          alt="next project"
+        />
       </button>
     </div>
   );
