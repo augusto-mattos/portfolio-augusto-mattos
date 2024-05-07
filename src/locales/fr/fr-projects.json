@@ -210,6 +210,26 @@
     "Site": "https://imagiflix.vercel.app/",
     "Repo": "https://github.com/augusto-mattos/imagiflix",
     "stack": ["React", "API Rest", "Tailwind CSS", "CSS", "JavaScript"]
+  },
+  {
+    "id": "food-recipes",
+    "title": "Food Recipes",
+    "cover": "food-recipes-miniature.webp",
+    "pictures": ["food-recipes-1.webp", "food-recipes-2.webp"],
+    "description": [
+      "L'application web Food Recipes a été créée en utilisant React + Vite. Elle exploite les données de l'API Edanam pour proposer une sélection variée de recettes de cuisine de qualité. Les utilisateurs peuvent mener des recherches avancées en combinant différents critères tels que le type de cuisine, les régimes alimentaires et les types de repas. Sur la page détaillée d'une recette, les utilisateurs peuvent accéder aux informations nutritionnelles et à la liste des ingrédients nécessaires. Ils ont également la possibilité de générer des fichiers PDF pour imprimer la liste des ingrédients ainsi qu'une liste de courses comprenant les éléments manquants pour préparer la recette, grâce à l'utilisation de jsPDF-html2canvas.",
+      "Pour garantir une navigation fluide, nous avons intégré React Router, permettant aux utilisateurs de passer facilement des détails d'une recette aux résultats de recherche. De plus, ils peuvent sauvegarder leurs recettes préférées dans leurs favoris. Cette fonctionnalité repose sur un système d'authentification sécurisé et une base de données stockant les informations relatives à chaque utilisateur, mis en place avec Firebase. Je tiens à souligner la précieuse contribution de Nicola Gonzaga, développeuse front-end et amie, qui a collaboré à la réalisation de ce projet."
+    ],
+    "actions": [
+      "Conception de l'application avec React + Vite et Sass pour la création des styles",
+      "Intégration de l'API Edanam pour obtenir des données sur les recettes de cuisine",
+      "Implémentation de jsPDF-html2canvas pour la génération de fichiers PDF",
+      "Utilisation de Firebase pour la gestion de l'authentification et le stockage des informations utilisateurs dans une base de données sécurisée",
+      "Mise en place de React Router pour une navigation fluide entre les différentes pages de l'application"
+    ],
+    "Site": "https://github.com/augusto-mattos/food-recipes",
+    "Repo": "https://github.com/augusto-mattos/food-recipes",
+    "stack": ["React", "API Rest", "Sass", "JavaScript", "Firebase"]
   }
 ]
  

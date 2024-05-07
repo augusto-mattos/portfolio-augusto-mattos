@@ -210,6 +210,26 @@
     "Site": "https://imagiflix.vercel.app/",
     "Repo": "https://github.com/augusto-mattos/imagiflix",
     "stack": ["React", "API Rest", "Tailwind CSS", "CSS", "JavaScript"]
+  },
+  {
+    "id": "food-recipes",
+    "title": "Food Recipes",
+    "cover": "food-recipes-miniature.webp",
+    "pictures": ["food-recipes-1.webp", "food-recipes-2.webp"],
+    "description": [
+      "O aplicativo web Food Recipes foi criado utilizando React + Vite. Ele utiliza os dados da API Edanam para oferecer uma seleção variada de receitas de culinária de qualidade. Os usuários podem realizar pesquisas avançadas combinando diferentes critérios, como tipo de culinária, dietas alimentares e tipos de refeições. Na página detalhada de uma receita, os usuários podem acessar informações nutricionais e a lista de ingredientes necessários. Eles também têm a opção de gerar arquivos PDF para imprimir a lista de ingredientes, bem como uma lista de compras contendo os itens necessários para preparar a receita, graças ao uso do jsPDF-html2canvas.",
+      "Para garantir uma navegação suave, integramos o React Router, permitindo que os usuários alternem facilmente entre os detalhes de uma receita e os resultados da pesquisa. Além disso, eles podem salvar suas receitas favoritas em seus favoritos. Essa funcionalidade é suportada por um sistema de autenticação seguro e um banco de dados que armazena as informações de cada usuário, configurado com o Firebase. Importante destacar a valiosa contribuição de Nicola Gonzaga, desenvolvedora front-end e amiga, que colaborou na realização deste projeto."
+    ],
+    "actions": [
+      "Uso de React + Vite para criar a aplicação e de Sass para criação dos estilos",
+      "Integração da API Edanam para obter dados sobre receitas de culinária",
+      "Implementação do jsPDF-html2canvas para geração de arquivos PDF",
+      "Utilização do Firebase para gerenciamento de autenticação e armazenamento de informações de usuários em um banco de dados seguro",
+      "Implementação do React Router para uma navegação suave entre as diferentes páginas do aplicativo"
+    ],
+    "Site": "https://github.com/augusto-mattos/food-recipes",
+    "Repo": "https://github.com/augusto-mattos/food-recipes",
+    "stack": ["React", "API Rest", "Sass", "JavaScript", "Firebase"]
   }
 ]
  
