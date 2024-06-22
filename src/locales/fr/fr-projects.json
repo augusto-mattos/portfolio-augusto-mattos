@@ -2,6 +2,7 @@
   {
     "id": "kasa",
     "title": "Kasa",
+    "update" :"27/03/2023",
     "cover": "kasa-miniature.webp",
     "pictures": ["kasa-1.webp", "kasa-2.webp"],
     "description": [
@@ -22,6 +23,7 @@
   {
     "id": "724-events",
     "title": "724 Events",
+    "update" :"20/12/2023",
     "cover": "724events-miniature.webp",
     "pictures": ["724events-1.webp", "724events-2.webp"],
     "description": [
@@ -43,6 +45,7 @@
   {
     "id": "argent-bank",
     "title": "Argent Bank",
+    "update" :"17/01/2024",
     "cover": "argent-bank-miniature.webp",
     "pictures": ["argent-bank-1.webp", "argent-bank-2.webp"],
     "description": [
@@ -63,6 +66,7 @@
   {
     "id": "nina-carducci",
     "title": "Nina Carducci",
+    "update" :"12/12/2023",
     "cover": "nina-carducci-miniature.webp",
     "pictures": ["nina-carducci-1.webp", "nina-carducci-2.webp"],
     "description": [
@@ -82,6 +86,7 @@
   {
     "id": "sophie-bluel",
     "title": "Portfolio Sophie Bluel",
+    "update" :"09/10/2023",
     "cover": "sophie-bluel-miniature.webp",
     "pictures": ["sophie-bluel-1.webp", "sophie-bluel-2.webp"],
     "description": [
@@ -103,6 +108,7 @@
   {
     "id": "oh-my-food",
     "title": "OhMyFood",
+    "update" :"05/10/2023",
     "cover": "ohmyfood-miniature.webp",
     "pictures": ["ohmyfood-1.webp", "ohmyfood-2.webp"],
     "description": [
@@ -122,6 +128,7 @@
   {
     "id": "print-it",
     "title": "Print-it !",
+    "update" :"28/08/2023",
     "cover": "print-it-miniature.webp",
     "pictures": ["print-it-1.webp", "print-it-2.webp"],
     "description": [
@@ -140,6 +147,7 @@
   {
     "id": "booki",
     "title": "Booki",
+    "update" :"27/11/2023",
     "cover": "booki-miniature.webp",
     "pictures": ["booki-1.webp", "booki-2.webp"],
     "description": [
@@ -158,6 +166,7 @@
   {
     "id": "studion",
     "title": "StudiOn",
+    "update" :"12/12/2023",
     "cover": "studion-miniature.webp",
     "pictures": ["studion-1.webp", "studion-2.webp"],
     "description": [
@@ -176,6 +185,7 @@
   {
     "id": "magbank",
     "title": "MagBank",
+    "update" :"09/12/2022",
     "cover": "magbank-miniature.webp",
     "pictures": ["magbank-1.webp", "magbank-2.webp"],
     "description": [
@@ -195,6 +205,7 @@
   {
     "id": "imagiflix",
     "title": "Imagiflix",
+    "update" :"29/02/2024",
     "cover": "imagiflix-miniature.webp",
     "pictures": ["imagiflix-1.webp", "imagiflix-2.webp"],
     "description": [
@@ -212,24 +223,27 @@
     "stack": ["React", "API Rest", "Tailwind CSS", "CSS", "JavaScript"]
   },
   {
-    "id": "food-recipes",
-    "title": "Food Recipes",
-    "cover": "food-recipes-miniature.webp",
-    "pictures": ["food-recipes-1.webp", "food-recipes-2.webp"],
+    "id": "julia-peixotto",
+    "title": "Júlia Peixotto",
+    "update" :"07/06/2024",
+    "cover": "julia-miniature.webp",
+    "pictures": ["julia-1.webp", "julia-2.webp"],
     "description": [
-      "L'application web Food Recipes a été créée en utilisant React + Vite. Elle exploite les données de l'API Edanam pour proposer une sélection variée de recettes de cuisine de qualité. Les utilisateurs peuvent mener des recherches avancées en combinant différents critères tels que le type de cuisine, les régimes alimentaires et les types de repas. Sur la page détaillée d'une recette, les utilisateurs peuvent accéder aux informations nutritionnelles et à la liste des ingrédients nécessaires. Ils ont également la possibilité de générer des fichiers PDF pour imprimer la liste des ingrédients ainsi qu'une liste de courses comprenant les éléments manquants pour préparer la recette, grâce à l'utilisation de jsPDF-html2canvas.",
-      "Pour garantir une navigation fluide, nous avons intégré React Router, permettant aux utilisateurs de passer facilement des détails d'une recette aux résultats de recherche. De plus, ils peuvent sauvegarder leurs recettes préférées dans leurs favoris. Cette fonctionnalité repose sur un système d'authentification sécurisé et une base de données stockant les informations relatives à chaque utilisateur, mis en place avec Firebase. Je tiens à souligner la précieuse contribution de Nicola Gonzaga, développeuse front-end et amie, qui a collaboré à la réalisation de ce projet."
+      "Le site de la chanteuse Júlia Peixotto a été créé en utilisant React et Sass. Il exploite les données de l'API Spotify pour charger ses singles et albums disponibles sur l’application. Les utilisateurs peuvent explorer l’univers de l’artiste avec une interface visuellement attrayante et intuitive, conçue à l'aide de Figma. Sur la page des productions musicales, en plus des albums, les utilisateurs peuvent aussi accéder aux paroles de ses chansons. Cette section utilise des accordéons interactifs conçus à partir de l'utilisation de MUI.",
+      "Pour garantir une gestion efficace des événements, j’ai intégré Firebase pour gérer la connexion admin et stocker les informations relatives à son agenda. Ainsi, la chanteuse peut facilement créer, modifier et supprimer des événements tels que des concerts ou des séances d'enregistrement. J’ai également optimisé le SEO du site pour un meilleur référencement, incluant des pratiques de référencement local et l'inclusion d'un sitemap pour améliorer la visibilité sur les moteurs de recherche."
     ],
     "actions": [
-      "Conception de l'application avec React + Vite et Sass pour la création des styles",
-      "Intégration de l'API Edanam pour obtenir des données sur les recettes de cuisine",
-      "Implémentation de jsPDF-html2canvas pour la génération de fichiers PDF",
-      "Utilisation de Firebase pour la gestion de l'authentification et le stockage des informations utilisateurs dans une base de données sécurisée",
-      "Mise en place de React Router pour une navigation fluide entre les différentes pages de l'application"
+      "Conception du site avec React et Sass pour la création des styles",
+      "Intégration de l'API Spotify pour obtenir des données sur les albums",
+      "Utilisation de Figma pour le dessin de la maquette",
+      "Mise en place de Firebase pour la gestion de l'authentification admin et le stockage des informations",
+      "Implémentation de MUI pour la création d'accordéons affichant les paroles des chansons",
+      "Optimisation du SEO pour un meilleur référencement, y compris le référencement local",
+      "Inclusion d'un sitemap pour améliorer la visibilité sur les moteurs de recherche"
     ],
-    "Site": "https://github.com/augusto-mattos/food-recipes",
-    "Repo": "https://github.com/augusto-mattos/food-recipes",
-    "stack": ["React", "API Rest", "Sass", "JavaScript", "Firebase"]
+    "Site": "https://juliapeixotto.com.br/",
+    "Repo": "https://github.com/augusto-mattos/julia-peixotto",
+    "stack": ["React", "API Rest", "Sass", "JavaScript", "Figma", "Firebase", "MUI"]
   }
 ]
  
