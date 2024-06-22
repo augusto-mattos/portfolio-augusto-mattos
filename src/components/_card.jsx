@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 function Card(props) {
-  const { id, cover, title } = props.project;
+  const { id, cover, title, update } = props.project;
   return (
     <Link
       to={`/projet/${id}`}
@@ -19,6 +19,9 @@ function Card(props) {
           loading="lazy"
         />
       </div>
+      <p>
+        {`Updated: ${update}`}
+      </p>
     </Link>
   );
 }
