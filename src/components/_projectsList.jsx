@@ -2,20 +2,24 @@ import React, { useState } from "react";
 import projects from "../locales/fr/fr-projects.json";
 import Card from "./_card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronLeft,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft, faChevronRight, faSort } from "@fortawesome/free-solid-svg-icons";
 
 function ProjectsList() {
   const [currentPage, setCurrentPage] = useState(1);
+  const [isAscending, setIsAscending] = useState(false);
   const projectsPerPage = 6;
 
-  const totalPages = Math.ceil(projects.length / projectsPerPage);
+  const sortedProjects = projects.sort((a, b) => {
+    const dateA = new Date(a.update.split('/').reverse().join('-'));
+    const dateB = new Date(b.update.split('/').reverse().join('-'));
+    return isAscending ? dateA - dateB : dateB - dateA;
+  });
+
+  const totalPages = Math.ceil(sortedProjects.length / projectsPerPage);
 
   const indexOfLastProject = currentPage * projectsPerPage;
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
-  const currentProjects = projects.slice(
+  const currentProjects = sortedProjects.slice(
     indexOfFirstProject,
     indexOfLastProject
   );
@@ -32,8 +36,18 @@ function ProjectsList() {
     }
   };
 
+  const toggleOrder = () => {
+    setIsAscending(!isAscending);
+  };
+
   return (
     <>
+      <div className="controls">
+        <button onClick={toggleOrder} className="btn-plus">
+          <FontAwesomeIcon icon={faSort} className="sort-icon" />
+          {isAscending ? "Voir du plus au moins récent" : "Voir du moins au plus récent"}
+        </button>
+      </div>
       <div className="gallery">
         {currentProjects.map((project) => (
           <Card
