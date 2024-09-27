@@ -244,6 +244,29 @@
     "Site": "https://juliapeixotto.com.br/",
     "Repo": "https://github.com/augusto-mattos/julia-peixotto",
     "stack": ["React", "API Rest", "Sass", "JavaScript", "Figma", "Firebase", "MUI"]
+  },
+  {
+    "id": "carla-mello",
+    "title": "Carla Mello",
+    "update" :"27/09/2024",
+    "cover": "carlinha-miniature.webp",
+    "pictures": ["carlinha-1.webp", "carlinha-2.webp"],
+    "description": [
+      "Carla Mello est une professionnelle spécialisée dans le domaine des textes et des thérapies holistiques, combinant ces deux expertises dans ses services. Son site a été conçu avec Figma pour la maquette et développé en React et Sass pour assurer des performances optimales et des styles modernes. Grâce à l'intégration de la bibliothèque MUI, la section 'À propos' propose des accordéons interactifs qui facilitent la navigation et l'exploration de son contenu. Pour améliorer l'expérience utilisateur, j'ai intégré emailjs au formulaire de contact, permettant une gestion efficace des messages.",
+      "Du côté de l'administration, j'ai choisi Firebase pour gérer l'authentification et le stockage des informations, offrant à Carla une interface simple et sécurisée pour mettre à jour son contenu. Enfin, j'ai optimisé le SEO du site, en mettant en place des pratiques de référencement local et en ajoutant un sitemap pour améliorer sa visibilité sur les moteurs de recherche."
+    ],
+    "actions": [
+      "Conception du site avec React et Sass pour la création des styles",
+      "Utilisation de Figma pour le dessin de la maquette",
+      "Mise en place de Firebase pour la gestion de l'authentification admin et le stockage des informations",
+      "Mise en place de Firebase pour la gestion de l'authentification admin et le stockage des informations",
+      "Implémentation de MUI pour la création d'accordéons affichant la mission et les valeurs de l’entreprise",
+      "Optimisation du SEO pour un meilleur référencement, y compris le référencement local",
+      "Inclusion d'un sitemap pour améliorer la visibilité sur les moteurs de recherche"
+    ],
+    "Site": "https://carlinha-mello.vercel.app/",
+    "Repo": "https://github.com/augusto-mattos/carlinha-mello",
+    "stack": ["React", "Sass", "JavaScript", "Figma", "emailjs", "Firebase", "MUI"]
   }
 ]
  
