@@ -2,7 +2,7 @@
   {
     "id": "kasa",
     "title": "Kasa",
-    "update" :"27/03/2023",
+    "update": "27/03/2023",
     "cover": "kasa-miniature.webp",
     "pictures": ["kasa-1.webp", "kasa-2.webp"],
     "description": [
@@ -23,7 +23,7 @@
   {
     "id": "724-events",
     "title": "724 Events",
-    "update" :"20/12/2023",
+    "update": "20/12/2023",
     "cover": "724events-miniature.webp",
     "pictures": ["724events-1.webp", "724events-2.webp"],
     "description": [
@@ -45,7 +45,7 @@
   {
     "id": "argent-bank",
     "title": "Argent Bank",
-    "update" :"17/01/2024",
+    "update": "17/01/2024",
     "cover": "argent-bank-miniature.webp",
     "pictures": ["argent-bank-1.webp", "argent-bank-2.webp"],
     "description": [
@@ -66,7 +66,7 @@
   {
     "id": "nina-carducci",
     "title": "Nina Carducci",
-    "update" :"12/12/2023",
+    "update": "12/12/2023",
     "cover": "nina-carducci-miniature.webp",
     "pictures": ["nina-carducci-1.webp", "nina-carducci-2.webp"],
     "description": [
@@ -86,7 +86,7 @@
   {
     "id": "sophie-bluel",
     "title": "Portfolio Sophie Bluel",
-    "update" :"09/10/2023",
+    "update": "09/10/2023",
     "cover": "sophie-bluel-miniature.webp",
     "pictures": ["sophie-bluel-1.webp", "sophie-bluel-2.webp"],
     "description": [
@@ -108,7 +108,7 @@
   {
     "id": "oh-my-food",
     "title": "OhMyFood",
-    "update" :"05/10/2023",
+    "update": "05/10/2023",
     "cover": "ohmyfood-miniature.webp",
     "pictures": ["ohmyfood-1.webp", "ohmyfood-2.webp"],
     "description": [
@@ -128,7 +128,7 @@
   {
     "id": "print-it",
     "title": "Print-it !",
-    "update" :"28/08/2023",
+    "update": "28/08/2023",
     "cover": "print-it-miniature.webp",
     "pictures": ["print-it-1.webp", "print-it-2.webp"],
     "description": [
@@ -147,7 +147,7 @@
   {
     "id": "booki",
     "title": "Booki",
-    "update" :"27/11/2023",
+    "update": "27/11/2023",
     "cover": "booki-miniature.webp",
     "pictures": ["booki-1.webp", "booki-2.webp"],
     "description": [
@@ -166,7 +166,7 @@
   {
     "id": "studion",
     "title": "StudiOn",
-    "update" :"12/12/2023",
+    "update": "12/12/2023",
     "cover": "studion-miniature.webp",
     "pictures": ["studion-1.webp", "studion-2.webp"],
     "description": [
@@ -185,7 +185,7 @@
   {
     "id": "magbank",
     "title": "MagBank",
-    "update" :"09/12/2022",
+    "update": "09/12/2022",
     "cover": "magbank-miniature.webp",
     "pictures": ["magbank-1.webp", "magbank-2.webp"],
     "description": [
@@ -205,7 +205,7 @@
   {
     "id": "imagiflix",
     "title": "Imagiflix",
-    "update" :"29/02/2024",
+    "update": "29/02/2024",
     "cover": "imagiflix-miniature.webp",
     "pictures": ["imagiflix-1.webp", "imagiflix-2.webp"],
     "description": [
@@ -225,7 +225,7 @@
   {
     "id": "julia-peixotto",
     "title": "Júlia Peixotto",
-    "update" :"07/06/2024",
+    "update": "07/06/2024",
     "cover": "julia-miniature.webp",
     "pictures": ["julia-1.webp", "julia-2.webp"],
     "description": [
@@ -243,12 +243,20 @@
     ],
     "Site": "https://juliapeixotto.com.br/",
     "Repo": "https://github.com/augusto-mattos/julia-peixotto",
-    "stack": ["React", "API Rest", "Sass", "JavaScript", "Figma", "Firebase", "MUI"]
+    "stack": [
+      "React",
+      "API Rest",
+      "Sass",
+      "JavaScript",
+      "Figma",
+      "Firebase",
+      "MUI"
+    ]
   },
   {
     "id": "carla-mello",
     "title": "Carla Mello",
-    "update" :"27/09/2024",
+    "update": "27/09/2024",
     "cover": "carlinha-miniature.webp",
     "pictures": ["carlinha-1.webp", "carlinha-2.webp"],
     "description": [
@@ -266,7 +274,39 @@
     ],
     "Site": "https://carlinha-mello.vercel.app/",
     "Repo": "https://github.com/augusto-mattos/carlinha-mello",
-    "stack": ["React", "Sass", "JavaScript", "Figma", "emailjs", "Firebase", "MUI"]
+    "stack": [
+      "React",
+      "Sass",
+      "JavaScript",
+      "Figma",
+      "emailjs",
+      "Firebase",
+      "MUI"
+    ]
+  },
+  {
+    "id": "liliane-almeida",
+    "title": "Liliane Almeida",
+    "update": "20/12/2024",
+    "cover": "lili-miniature.webp",
+    "pictures": ["lili-1.webp", "lili-2.webp"],
+    "description": [
+      "Liliane Almeida est une avocate spécialisée offrant des services juridiques à travers son cabinet. Son site internet, initialement créé avec le CMS Wix a été repensé pour améliorer son efficacité et son attrait visuel.",
+      "J’ai entrepris de redessiner entièrement la structure du site pour optimiser son contenu et moderniser son apparence. La refonte a également inclus une révision complète des aspects de SEO et de référencement local pour améliorer la visibilité sur les moteurs de recherche, ainsi qu’une optimisation de la performance du site pour garantir une expérience utilisateur fluide. En exploitant les fonctionnalités natives de Wix, j'ai assuré une mise à jour harmonieuse et efficace. Une fois le nouveau design finalisé, j’ai géré la migration du domaine de l’ancien site vers la nouvelle version, assurant une transition sans interruption."
+    ],
+    "actions": [
+      "Refonte complète de la structure et du design du site existant sur Wix",
+      "Révision et optimisation du SEO pour améliorer le référencement",
+      "Amélioration de la performance du site pour une navigation fluide",
+      "Migration du domaine du site ancien vers le nouveau",
+      "Exploitation des fonctionnalités natives du CMS Wix pour maximiser l’efficacité"
+    ],
+    "Site": "https://www.lilianealmeidaadv.com.br/",
+    "Repo": "https://www.lilianealmeidaadv.com.br/",
+    "stack": [
+      "Figma",
+      "Wix",
+      "SEO"
+    ]
   }
 ]
- 

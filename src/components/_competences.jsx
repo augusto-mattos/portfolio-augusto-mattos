@@ -9,6 +9,8 @@ import psLogo from "../assets/logos/logo_photoshop.png";
 import githubLogo from "../assets/logos/github-mark.png";
 import tailwindLogo from "../assets/logos/tailwind.png";
 import firebaseLogo from "../assets/logos/firebase_logo.png";
+import wordpressLogo from "../assets/logos/WordPress_logo.webp";
+import wixLogo from "../assets/logos/logo-wix.webp";
 
 function Competences() {
   return (
@@ -93,6 +95,20 @@ function Competences() {
             alt="GitHub"
           />
           <p>GitHub</p>
+        </div>
+        <div className="stack-logo">
+          <img
+            src={wordpressLogo}
+            alt="WordPress"
+          />
+          <p>WordPress</p>
+        </div>
+        <div className="stack-logo">
+          <img
+            src={wixLogo}
+            alt="Wix"
+          />
+          <p>Wix</p>
         </div>
       </div>
     </section>

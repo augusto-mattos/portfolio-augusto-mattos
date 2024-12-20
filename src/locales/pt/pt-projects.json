@@ -267,6 +267,31 @@
     "Site": "https://carlinha-mello.vercel.app/",
     "Repo": "https://github.com/augusto-mattos/carlinha-mello",
     "stack": ["React", "Sass", "JavaScript", "Figma", "emailjs", "Firebase", "MUI"]
+  },
+  {
+    "id": "liliane-almeida",
+    "title": "Liliane Almeida",
+    "update": "20/12/2024",
+    "cover": "lili-miniature.webp",
+    "pictures": ["lili-1.webp", "lili-2.webp"],
+    "description": [
+      "Liliane Almeida é uma advogada especializada em direito de família e sucessões que oferece serviços jurídicos em Curitiba. Seu site, originalmente criado com o CMS Wix, foi repensado para melhorar sua eficiência e atratividade visual.",
+      "Realizei um redesenho completo da estrutura do site para otimizar o conteúdo e modernizar sua aparência. A reformulação também incluiu uma revisão detalhada de SEO e de estratégias de SEO local para aumentar a visibilidade nos motores de busca, além de otimizar o desempenho do site para proporcionar uma experiência de navegação fluida. Aproveitando as funcionalidades nativas do Wix, garanti uma atualização eficiente e alinhada às necessidades do cliente. Após o novo design, gerenciei a migração do domínio do site antigo para a nova versão, garantindo uma transição sem interrupções."
+    ],
+    "actions": [
+      "Redesenho completo da estrutura e do design do site existente no Wix",
+      "Revisão e otimização do SEO para melhorar o posicionamento nos motores de busca",
+      "Melhoria no desempenho do site para uma navegação mais fluida",
+      "Migração do domínio do site antigo para o novo",
+      "Uso das funcionalidades nativas do CMS Wix para maximizar a eficiência"
+    ],
+    "Site": "https://www.lilianealmeidaadv.com.br/",
+    "Repo": "https://www.lilianealmeidaadv.com.br/",
+    "stack": [
+      "Figma",
+      "Wix",
+      "SEO"
+    ]
   }
 ]
  
