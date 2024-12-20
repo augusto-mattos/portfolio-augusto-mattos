@@ -12,106 +12,42 @@ import firebaseLogo from "../assets/logos/firebase_logo.png";
 import wordpressLogo from "../assets/logos/WordPress_logo.webp";
 import wixLogo from "../assets/logos/logo-wix.webp";
 
+const skills = [
+  { src: htmlLogo, alt: "HTML", name: "HTML" },
+  { src: cssLogo, alt: "CSS", name: "CSS" },
+  { src: jsLogo, alt: "Javascript", name: "Javascript" },
+  { src: reactLogo, alt: "React", name: "React" },
+  { src: reduxLogo, alt: "Redux", name: "Redux" },
+  { src: sassLogo, alt: "Sass", name: "Sass" },
+  { src: tailwindLogo, alt: "Tailwind", name: "Tailwind CSS" },
+  { src: figmaLogo, alt: "Figma", name: "Figma" },
+  { src: psLogo, alt: "Photoshop", name: "Photoshop" },
+  { src: githubLogo, alt: "Github", name: "Github" },
+  { src: firebaseLogo, alt: "Firebase", name: "Firebase" },
+  { src: wordpressLogo, alt: "WordPress", name: "WordPress" },
+  { src: wixLogo, alt: "Wix", name: "Wix" },
+];
+
 function Competences() {
   return (
-    <section
-      id="stack"
-      className="competences-container"
-    >
-      <div className="competences">
-        <div className="stack-logo">
-          <img
-            src={htmlLogo}
-            alt="HTML"
-          />
-          <p>HTML</p>
+    <>
+      <section className="competences-container">
+        <div className="competences">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="stack-logo"
+            >
+              <img
+                src={skill.src}
+                alt={skill.alt}
+              />
+              <p>{skill.name}</p>
+            </div>
+          ))}
         </div>
-        <div className="stack-logo">
-          <img
-            src={cssLogo}
-            alt="CSS"
-          />
-          <p>CSS</p>
-        </div>
-        <div className="stack-logo">
-          <img
-            src={jsLogo}
-            alt="JavaScript"
-          />
-          <p>JavaScript</p>
-        </div>
-        <div className="stack-logo">
-          <img
-            src={reactLogo}
-            alt="React"
-          />
-          <p>React</p>
-        </div>
-        <div className="stack-logo">
-          <img
-            src={reduxLogo}
-            alt="Redux"
-          />
-          <p>Redux</p>
-        </div>
-        <div className="stack-logo">
-          <img
-            src={sassLogo}
-            alt="Sass"
-          />
-          <p>Sass</p>
-        </div>
-        <div className="stack-logo">
-          <img
-            src={tailwindLogo}
-            alt="Tailwind"
-          />
-          <p>Tailwind CSS</p>
-        </div>
-        <div className="stack-logo">
-          <img
-            src={firebaseLogo}
-            alt="Firebase"
-          />
-          <p>Firebase</p>
-        </div>
-        <div className="stack-logo">
-          <img
-            src={figmaLogo}
-            alt="Figma"
-          />
-          <p>Figma</p>
-        </div>
-        <div className="stack-logo">
-          <img
-            src={psLogo}
-            alt="Photoshop"
-          />
-          <p>Photoshop</p>
-        </div>
-        <div className="stack-logo">
-          <img
-            src={githubLogo}
-            alt="GitHub"
-          />
-          <p>GitHub</p>
-        </div>
-        <div className="stack-logo">
-          <img
-            src={wordpressLogo}
-            alt="WordPress"
-          />
-          <p>WordPress</p>
-        </div>
-        <div className="stack-logo">
-          <img
-            src={wixLogo}
-            alt="Wix"
-          />
-          <p>Wix</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
